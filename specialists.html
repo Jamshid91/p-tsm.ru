@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Специалисты</title>
+    <link rel="stylesheet" href="./assets/style/css/plugins/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/css/plugins/swiper.css">
+    <link rel="stylesheet" href="./assets/style/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row d-none d-lg-flex">
+                <div class="col-12">
+                    <div class="header-top d-flex justify-content-between align-items-center">
+                        <a href="./index.html" class="header__logo">p-tsm.ru</a>
+                        <div class="header-top-middle d-flex align-items-center">
+                            <svg class="me-2" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.7638 12.344C16.617 12.2533 16.4336 12.245 16.2792 12.3222L14.3681 13.2778L12.7323 12.4599V7.43308C12.7323 7.23164 12.6109 7.05002 12.4248 6.97296C12.2388 6.89592 12.0245 6.93849 11.882 7.08093L11.8372 7.12579L8.99805 1.44742V0.498047C8.99805 0.222992 8.77505 0 8.5 0C8.22495 0 8.00195 0.222992 8.00195 0.498047V1.44739L5.16279 7.12576L5.11793 7.0809C4.97552 6.93842 4.76126 6.89579 4.57516 6.97292C4.38905 7.05002 4.2677 7.23164 4.2677 7.43305V12.4599L2.63188 13.2778L0.72074 12.3222C0.566379 12.245 0.382998 12.2532 0.236174 12.344C0.0893828 12.4348 0 12.5951 0 12.7677V16.502C0 16.777 0.222992 17 0.498047 17H16.502C16.777 17 17 16.777 17 16.502V12.7677C17 12.5951 16.9107 12.4348 16.7638 12.344ZM8.5 2.67863L11.0948 7.86818L10.3671 8.59586L8.85215 7.08093C8.65768 6.88643 8.34232 6.88643 8.14781 7.08093L6.63286 8.59586L5.90521 7.86821L8.5 2.67863ZM0.996094 13.5736L2.40919 14.2801C2.5494 14.3502 2.71442 14.3502 2.85464 14.2801L4.26773 13.5736V16.0039H0.996094V13.5736ZM5.26379 12.7677V8.63547L6.2807 9.65235C6.47517 9.84685 6.79054 9.84685 6.98504 9.65235L8.5 8.13742L10.015 9.65235C10.2094 9.84685 10.5248 9.84685 10.7193 9.65235L11.7362 8.63547V12.7677V16.0039H5.26379V12.7677ZM16.0039 16.0039H12.7323V13.5736L14.1454 14.2801C14.2856 14.3502 14.4506 14.3502 14.5908 14.2801L16.0039 13.5736V16.0039Z" fill="#39395B"/>
+                            </svg>
+                            Иркутск, ул. Лермонтова, д. 208, офис 105
+                        </div>
+                        <a href="tel:83952625292" class="header-top-call d-flex align-items-end flex-column">
+                            8 (3952) 62-52-92
+                            <span class="">Заказать звонок</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-lg-flex">
+                <div class="col-12">
+                    <ul class="header-item d-flex justify-content-between">
+                        <li class="header-list"><a href="./specialists.html">Наши специалисты </a></li>
+                        <li class="header-list"><a href="./index.html">Технологический аудит и контроль </a></li>
+                        <li class="header-list"><a href="./audit.html">Решение проблем </a></li>
+                        <li class="header-list"><a href="./special.html">Акции </a></li>
+                        <li class="header-list"><a href="./reviews.html">Отзывы </a></li>
+                        <li class="header-list"><a href="./contacts.html">Контакты </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row d-lg-none">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="./index.html" class="header__logo">p-tsm.ru</a>
+                        <div class="d-flex align-items-center">
+                          <a href="tel:83952625292" class="me-4">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.9243 10.4401C12.0182 9.66506 11.0986 9.1956 10.2035 9.96945L9.6691 10.4372C9.27808 10.7767 8.55105 12.363 5.74013 9.12945C2.92979 5.89999 4.60218 5.39716 4.99379 5.06057L5.53115 4.59228C6.42149 3.81667 6.08549 2.84028 5.44335 1.83521L5.05583 1.22643C4.41076 0.223695 3.70832 -0.434842 2.81564 0.339597L2.3333 0.761061C1.93876 1.04848 0.835932 1.98272 0.56842 3.75755C0.246469 5.88711 1.26208 8.32574 3.58891 11.0015C5.91281 13.6783 8.18813 15.0229 10.3434 14.9995C12.1347 14.9802 13.2164 14.019 13.5548 13.6695L14.0389 13.2475C14.9292 12.4736 14.376 11.6857 13.4693 10.909L12.9243 10.4401Z" fill="#39395B"/>
+                            </svg>
+                          </a>
+                          <div class="menu-burger">
+                            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0.125V1.375H20V0.125H0ZM0 7.625H20V6.375H0V7.625ZM0 13.875H20V12.625H0V13.875Z" fill="#39395B"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu d-none">
+            <div class="menu-content">
+                <button class="menu__close">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.36719 3.36719L19.6325 19.6325" stroke="#525D7D" stroke-width="2.1875" stroke-miterlimit="10"/>
+                        <path d="M3.36719 19.6325L19.6325 3.36719" stroke="#525D7D" stroke-width="2.1875" stroke-miterlimit="10"/>
+                    </svg>
+                </button>
+                <ul class="menu-content-item ">
+                        <li class="menu-content-list"><a href="./specialists.html">Наши специалисты </a></li>
+                        <li class="menu-content-list"><a href="./index.html">Технологический аудит и контроль </a></li>
+                        <li class="menu-content-list"><a href="./audit.html">Решение проблем </a></li>
+                        <li class="menu-content-list"><a href="./special.html">Акции </a></li>
+                        <li class="menu-content-list"><a href="./reviews.html">Отзывы </a></li>
+                        <li class="menu-content-list"><a href="./contacts.html">Контакты </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+
+     <!-- Наши специалисты -->
+    <div class="experts">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="title__text text-center">Наши специалисты</p>
+                    </div>
+                </div>
+    
+                <div class="row d-flex align-items-end mt-5">
+                    <div class="col-12">
+                        <div class="d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-start align-items-md-start">
+                            <label for="all1" data-radio="filter__1" class="experts-lab flex">
+                                <input type="radio" id="all1" name="all-works" checked>
+                                <div class="experts-btn">
+                                    <span>Технический отдел</span>
+                                </div>
+                            </label>
+                            <label for="all2" data-radio="filter__2" class="experts-lab flex">
+                                <input type="radio" id="all2" name="all-works">
+                                <div class="experts-btn">
+                                    <span>Инженерный отдел</span>
+                                </div>
+                            </label>
+                            <label for="all3" data-radio="filter__3" class="experts-lab flex">
+                                <input type="radio" id="all3" name="all-works">
+                                <div class="experts-btn">
+                                    <span>Лаборатория</span>
+                                </div>
+                            </label>
+                        </div>
+                       <div class="">
+                            <div class="position-relative expert-info filter__1">
+                                <div class="swiper experts-swiper filter1">
+                                    <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="experts-card">
+                                            <div class="experts-card-photo">
+                                                <img src="./assets/imgs/png/expert1.png" alt="" class="">
+                                            </div>
+                                            <p class="experts-card__title">Юлия </p>
+                                            <p class="experts-card__text">Технолог</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="experts-card">
+                                            <div class="experts-card-photo">
+                                                <img src="./assets/imgs/png/expert2.png" alt="" class="">
+                                            </div>
+                                            <p class="experts-card__title">Виктория </p>
+                                            <p class="experts-card__text">Технолог</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="experts-card">
+                                            <div class="experts-card-photo">
+                                                <img src="./assets/imgs/png/expert3.png" alt="" class="">
+                                            </div>
+                                            <p class="experts-card__title">Сергей </p>
+                                            <p class="experts-card__text">Технолог-лаборант</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="experts-card">
+                                            <div class="experts-card-photo">
+                                                <img src="./assets/imgs/png/expert4.png" alt="" class="">
+                                            </div>
+                                            <p class="experts-card__title">Андрей </p>
+                                            <p class="experts-card__text">Технолог</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="experts-button-prev swiper_btn prev">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.04349 6.0442L6.2368 0.865252C6.40696 0.695669 6.68244 0.695954 6.8523 0.866129C7.02204 1.03628 7.0216 1.31192 6.85143 1.48163L1.96724 6.35234L6.8516 11.223C7.02176 11.3928 7.02219 11.6682 6.85248 11.8384C6.76733 11.9237 6.65577 11.9663 6.54421 11.9663C6.43294 11.9663 6.32182 11.924 6.23682 11.8393L1.04349 6.66045C0.961539 6.57891 0.915552 6.46795 0.915552 6.35234C0.915552 6.23672 0.961671 6.12589 1.04349 6.0442Z" fill="#FFA24B"/>
+                                </svg>
+                            </div>
+                            <div class="experts-button-next swiper_btn next">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.95651 6.0442L0.763197 0.865252C0.593044 0.695669 0.317563 0.695954 0.147695 0.866129C-0.0220408 1.03628 -0.0216022 1.31192 0.148573 1.48163L5.03276 6.35234L0.148397 11.223C-0.0217558 11.3928 -0.0221944 11.6682 0.14752 11.8384C0.232673 11.9237 0.34423 11.9663 0.455786 11.9663C0.567058 11.9663 0.678176 11.924 0.763175 11.8393L5.95651 6.66045C6.03846 6.57891 6.08445 6.46795 6.08445 6.35234C6.08445 6.23672 6.03833 6.12589 5.95651 6.0442Z" fill="#FFA24B"/>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="position-relative expert-info filter__2">
+                                <div class="swiper experts-swiper filter2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="experts-card">
+                                                <div class="experts-card-photo">
+                                                    <img src="./assets/imgs/png/expert5.png" alt="" class="">
+                                                </div>
+                                                <p class="experts-card__title">Вячеслав </p>
+                                                <p class="experts-card__text">Инженер</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="experts-card">
+                                                <div class="experts-card-photo">
+                                                    <img src="./assets/imgs/png/expert6.png" alt="" class="">
+                                                </div>
+                                                <p class="experts-card__title">Анатолий </p>
+                                                <p class="experts-card__text">Инженер</p>
+                                            </div>
+                                        </div>
+                                    <div class="swiper-slide">
+                                        <div class="experts-card">
+                                            <div class="experts-card-photo">
+                                                <img src="./assets/imgs/png/expert7.png" alt="" class="">
+                                            </div>
+                                            <p class="experts-card__title">Дмитрий </p>
+                                            <p class="experts-card__text">Инженер</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="experts-card">
+                                            <div class="experts-card-photo">
+                                                <img src="./assets/imgs/png/expert9.png" alt="" class="">
+                                            </div>
+                                            <p class="experts-card__title">Максим </p>
+                                            <p class="experts-card__text">Инженер</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="experts-button-prev2 swiper_btn prev">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.04349 6.0442L6.2368 0.865252C6.40696 0.695669 6.68244 0.695954 6.8523 0.866129C7.02204 1.03628 7.0216 1.31192 6.85143 1.48163L1.96724 6.35234L6.8516 11.223C7.02176 11.3928 7.02219 11.6682 6.85248 11.8384C6.76733 11.9237 6.65577 11.9663 6.54421 11.9663C6.43294 11.9663 6.32182 11.924 6.23682 11.8393L1.04349 6.66045C0.961539 6.57891 0.915552 6.46795 0.915552 6.35234C0.915552 6.23672 0.961671 6.12589 1.04349 6.0442Z" fill="#FFA24B"/>
+                                </svg>
+                            </div>
+                            <div class="experts-button-next2 swiper_btn next">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.95651 6.0442L0.763197 0.865252C0.593044 0.695669 0.317563 0.695954 0.147695 0.866129C-0.0220408 1.03628 -0.0216022 1.31192 0.148573 1.48163L5.03276 6.35234L0.148397 11.223C-0.0217558 11.3928 -0.0221944 11.6682 0.14752 11.8384C0.232673 11.9237 0.34423 11.9663 0.455786 11.9663C0.567058 11.9663 0.678176 11.924 0.763175 11.8393L5.95651 6.66045C6.03846 6.57891 6.08445 6.46795 6.08445 6.35234C6.08445 6.23672 6.03833 6.12589 5.95651 6.0442Z" fill="#FFA24B"/>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="position-relative expert-info filter__3">
+                                <div class="swiper experts-swiper filter3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="experts-card">
+                                                <div class="experts-card-photo">
+                                                    <img src="./assets/imgs/png/expert12.png" alt="" class="">
+                                                </div>
+                                                <p class="experts-card__title">Кирилл </p>
+                                                <p class="experts-card__text">Руководитель лаборатории</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="experts-card">
+                                                <div class="experts-card-photo">
+                                                    <img src="./assets/imgs/png/expert10.png" alt="" class="">
+                                                </div>
+                                                <p class="experts-card__title">Андрей </p>
+                                                <p class="experts-card__text">Лаборант</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="experts-card">
+                                                <div class="experts-card-photo">
+                                                    <img src="./assets/imgs/png/expert11.png" alt="" class="">
+                                                </div>
+                                                <p class="experts-card__title">Савелий </p>
+                                                <p class="experts-card__text">Лаборант</p>
+                                            </div>
+                                        </div>
+                                    <div class="swiper-slide">
+                                        <div class="experts-card">
+                                            <div class="experts-card-photo">
+                                                <img src="./assets/imgs/png/expert8.png" alt="" class="">
+                                            </div>
+                                            <p class="experts-card__title">Анна </p>
+                                            <p class="experts-card__text">Лаборант</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="experts-button-prev3 swiper_btn prev">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.04349 6.0442L6.2368 0.865252C6.40696 0.695669 6.68244 0.695954 6.8523 0.866129C7.02204 1.03628 7.0216 1.31192 6.85143 1.48163L1.96724 6.35234L6.8516 11.223C7.02176 11.3928 7.02219 11.6682 6.85248 11.8384C6.76733 11.9237 6.65577 11.9663 6.54421 11.9663C6.43294 11.9663 6.32182 11.924 6.23682 11.8393L1.04349 6.66045C0.961539 6.57891 0.915552 6.46795 0.915552 6.35234C0.915552 6.23672 0.961671 6.12589 1.04349 6.0442Z" fill="#FFA24B"/>
+                                </svg>
+                            </div>
+                            <div class="experts-button-next3 swiper_btn next">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.95651 6.0442L0.763197 0.865252C0.593044 0.695669 0.317563 0.695954 0.147695 0.866129C-0.0220408 1.03628 -0.0216022 1.31192 0.148573 1.48163L5.03276 6.35234L0.148397 11.223C-0.0217558 11.3928 -0.0221944 11.6682 0.14752 11.8384C0.232673 11.9237 0.34423 11.9663 0.455786 11.9663C0.567058 11.9663 0.678176 11.924 0.763175 11.8393L5.95651 6.66045C6.03846 6.57891 6.08445 6.46795 6.08445 6.35234C6.08445 6.23672 6.03833 6.12589 5.95651 6.0442Z" fill="#FFA24B"/>
+                                </svg>
+                            </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+    
+            </div>
+    </div>
+
+    <!--  -->
+    <div class="experts-info">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-10">
+                   <div class="experts-info-item">
+                    <div class="d-flex align-items-center experts-info-item-sup flex-column flex-md-row">
+                        <img src="./assets/imgs/png/expert0.png" alt="" class="experts-info__img">
+                        <div class="mt-3 mt-md-0">
+                            <p class="experts-info__title">Мазуров Антон Викторович</p>
+                            <p class="experts-info__text">1987 г.р., 
+                                проживаю в г. Иркутск.
+                                Окончил НИ ИрГТУ, факультет: Строительства и городского хозяйства, специальность: Производство строительных материалов изделий и конструкций.
+                                Работаю с бетонами различных конфигураций уже 14 лет.</p>
+                        </div>
+                    </div>
+                    <div class="experts-info-item-sub">
+                        <p class="experts-info__title-sub">Коротко о достижениях:</p> 
+                        <ul class="experts-info-list">
+                            <li>- работал в больших компаниях по производству строительных материалов г. Иркутска на должности технолога, главного технолога, главного инженера;</li>
+                            <li>- имею большой опыт подбора команды для решения любых поставленных задач, способен принимать управленческие решения и нести за них ответственность;</li>
+                            <li>- впервые в Иркутске запустил самоуплотняющийся бетон В40, изготовленный полностью на местных материалах, для заливки сложной фигурной опалубки (с категорией поверхности А1);</li>
+                            <li>- запуск в производстве высокопрочного бетона В55 для заливки хранилища гранулированной серы (химически стойкий бетон для эксплуатации в агрессивной среде), изготовленный полностью на местных материалах;</li>
+                            <li>- работал в больших компаниях по производству строительных материалов г. Иркутска на должности технолога, главного технолога, главного инженера;</li>
+                            <li>- имею большой опыт подбора команды для решения любых поставленных задач, способен принимать управленческие решения и нести за них ответственность;</li>
+                            <li>- впервые в Иркутске запустил самоуплотняющийся бетон В40, изготовленный полностью на местных материалах, для заливки сложной фигурной опалубки (с категорией поверхности А1);</li>
+                            <li>- запуск в производстве высокопрочного бетона В55 для заливки хранилища гранулированной серы (химически стойкий бетон для эксплуатации в агрессивной среде), изготовленный полностью на местных материалах;</li>
+                        </ul>
+                        <button class="openAllInfo d-flex align-items-center">
+                            <svg class="me-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="7.5" cy="7.5" r="7.5" fill="#FFA24B"/>
+                                <path d="M5 7L7.5 9.5L10 7" stroke="white"/>
+                            </svg>
+                            <span>Читать полностью</span>
+                        </button>
+                    </div>
+                   </div> 
+                   <div class="experts-info-item">
+                    <div class="d-flex align-items-center experts-info-item-sup flex-column flex-md-row">
+                        <img src="./assets/imgs/png/expert12.png" alt="" class="experts-info__img">
+                        <div class="mt-3 mt-md-0">
+                            <p class="experts-info__title">Горожанцев Кирилл</p>
+                            <p class="experts-info__text">1987 г.р., 
+                                проживаю в г. Иркутск.
+                                Окончил НИ ИрГТУ, факультет: Строительства и городского хозяйства, специальность: Производство строительных материалов изделий и конструкций.
+                                Работаю с бетонами различных конфигураций уже 14 лет.</p>
+                        </div>
+                    </div>
+                    <div class="experts-info-item-sub">
+                        <p class="experts-info__title-sub">Коротко о достижениях:</p> 
+                        <ul class="experts-info-list">
+                            <li>- работал в больших компаниях по производству строительных материалов г. Иркутска на должности технолога, главного технолога, главного инженера;</li>
+                            <li>- имею большой опыт подбора команды для решения любых поставленных задач, способен принимать управленческие решения и нести за них ответственность;</li>
+                            <li>- впервые в Иркутске запустил самоуплотняющийся бетон В40, изготовленный полностью на местных материалах, для заливки сложной фигурной опалубки (с категорией поверхности А1);</li>
+                            <li>- запуск в производстве высокопрочного бетона В55 для заливки хранилища гранулированной серы (химически стойкий бетон для эксплуатации в агрессивной среде), изготовленный полностью на местных материалах;</li>
+                            <li>- работал в больших компаниях по производству строительных материалов г. Иркутска на должности технолога, главного технолога, главного инженера;</li>
+                            <li>- имею большой опыт подбора команды для решения любых поставленных задач, способен принимать управленческие решения и нести за них ответственность;</li>
+                            <li>- впервые в Иркутске запустил самоуплотняющийся бетон В40, изготовленный полностью на местных материалах, для заливки сложной фигурной опалубки (с категорией поверхности А1);</li>
+                            <li>- запуск в производстве высокопрочного бетона В55 для заливки хранилища гранулированной серы (химически стойкий бетон для эксплуатации в агрессивной среде), изготовленный полностью на местных материалах;</li>
+                        </ul>
+                        <button class="openAllInfo d-flex align-items-center">
+                            <svg class="me-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="7.5" cy="7.5" r="7.5" fill="#FFA24B"/>
+                                <path d="M5 7L7.5 9.5L10 7" stroke="white"/>
+                            </svg>
+                            <span>Читать полностью</span>
+                        </button>
+                    </div>
+                   </div> 
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 d-flex justify-content-center">
+                    <ul class="experts-info-page d-flex">
+                        <li class="experts-info-page-list active"><a href="#">1</a></li>
+                        <li class="experts-info-page-list"><a href="#">2</a></li>
+                        <li class="experts-info-page-list"><a href="#">3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Подваль -->
+    <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between flex-wrap flex-column-reverse flex-sm-row">
+                        <div class="d-sm-flex d-none flex-column justify-content-between mt-4">
+                            <a href="./index.html" class="footer__logo">p-tsm.ru</a>
+                            <span class="footer__logo-sub mt-3 mt-sm-0">© 2018-2023 p-tsm.ru <br>
+                                Отраслевая коммерческая <br>
+                                экспертиза бетона</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between mt-4 d-sm-none">
+                            <a href="./index.html" class="footer__logo-mob">p-tsm.ru</a>
+                            <span class="footer__logo-mob-sub mt-3 mt-sm-0">© 2018-2023 p-tsm.ru Отраслевая коммерческая <br>
+                                экспертиза бетона</span>
+                        </div>
+                        <div class="d-flex">
+                            <ul class="footer-item mt-4">
+                                <li class="footer-list"><a href="./specialists.html">О нас</a></li>
+                                <li class="footer-list"><a href="./index.html">Технологический аудит и контроль</a></li>
+                                <li class="footer-list"><a href="./audit.html">Решение проблем</a></li>
+                                <li class="footer-list"><a href="./special.html">Акции</a></li>
+                                <!-- <li class="footer-list"><a href="#">Выполненные работы</a></li> -->
+                            </ul>
+                            <ul class="footer-item mt-4">
+                                <li class="footer-list"><a href="./reviews.html">Отзывы</a></li>
+                                <!-- <li class="footer-list"><a href="#">Блог</a></li> -->
+                                <li class="footer-list"><a href="./contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-add d-flex align-items-center align-items-sm-start justify-content-center justify-content-sm-start flex-column mt-4">
+                            <p class="text-center">
+                                <svg class="me-2" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.82925 0.0030542C2.44512 0.0867079 0.464493 1.94677 0.235675 4.32106C0.188928 4.79592 0.215992 5.25601 0.299646 5.69642C0.299646 5.69642 0.307027 5.74809 0.331631 5.84651C0.405443 6.1762 0.516162 6.49605 0.653944 6.79622C1.13372 7.93293 2.24337 9.83482 4.73329 11.904C4.88584 12.032 5.10974 12.032 5.26474 11.904C7.75467 9.83728 8.86431 7.93539 9.34655 6.79376C9.48679 6.49359 9.59505 6.1762 9.66886 5.84405C9.69101 5.74809 9.70085 5.69396 9.70085 5.69396C9.75744 5.39872 9.78696 5.09609 9.78696 4.78608C9.78696 2.08455 7.55046 -0.0929015 4.82925 0.0030542ZM4.99902 7.16774C3.71469 7.16774 2.67394 6.12699 2.67394 4.84266C2.67394 3.55833 3.71469 2.51758 4.99902 2.51758C6.28335 2.51758 7.3241 3.55833 7.3241 4.84266C7.3241 6.12699 6.28335 7.16774 4.99902 7.16774Z" fill="#FFA24B"/>
+                            </svg>
+                            Иркутск,
+                        </p>
+                             <br> ул. Лермонтова, д. 208, офис 105
+                        </div>
+                        <div class="d-flex flex-column align-items-center align-items-sm-end mt-4">
+                            <a href="tel:83952625292" class="footer-tel">8 (3952) 62-52-92</a>
+                            <span class="footer-tel__sub">Заказать звонок</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <div class="pop-up pop-up-mess-ok d-none">
+        <div class="pop-up-item d-flex align-items-center position-relative">
+            <p class="title__text-ok">Сообщение отправлено!</p>
+        </div>
+    </div>
+    <div class="pop-up pop-up-mess-err d-none">
+        <div class="pop-up-item d-flex align-items-center position-relative">
+            <p class="title__text-ok">Произошла ошибка:(<br>Попробуйте позже.</p>
+        </div>
+    </div>
+
+    <script src="./assets/js/plugins/jquery.js"></script>
+    <script src="./assets/js/plugins/swiper.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/specialists.js"></script>
+    <script src="./assets/js/email.js"></script>
+</body>
+</html>

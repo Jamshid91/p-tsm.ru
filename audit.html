@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>тех аудит</title>
+    <link rel="stylesheet" href="./assets/style/css/plugins/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/css/plugins/animate.css">
+    <link rel="stylesheet" href="./assets/style/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row d-none d-lg-flex">
+                <div class="col-12">
+                    <div class="header-top d-flex justify-content-between align-items-center">
+                        <a href="./index.html" class="header__logo">p-tsm.ru</a>
+                        <div class="header-top-middle d-flex align-items-center">
+                            <svg class="me-2" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.7638 12.344C16.617 12.2533 16.4336 12.245 16.2792 12.3222L14.3681 13.2778L12.7323 12.4599V7.43308C12.7323 7.23164 12.6109 7.05002 12.4248 6.97296C12.2388 6.89592 12.0245 6.93849 11.882 7.08093L11.8372 7.12579L8.99805 1.44742V0.498047C8.99805 0.222992 8.77505 0 8.5 0C8.22495 0 8.00195 0.222992 8.00195 0.498047V1.44739L5.16279 7.12576L5.11793 7.0809C4.97552 6.93842 4.76126 6.89579 4.57516 6.97292C4.38905 7.05002 4.2677 7.23164 4.2677 7.43305V12.4599L2.63188 13.2778L0.72074 12.3222C0.566379 12.245 0.382998 12.2532 0.236174 12.344C0.0893828 12.4348 0 12.5951 0 12.7677V16.502C0 16.777 0.222992 17 0.498047 17H16.502C16.777 17 17 16.777 17 16.502V12.7677C17 12.5951 16.9107 12.4348 16.7638 12.344ZM8.5 2.67863L11.0948 7.86818L10.3671 8.59586L8.85215 7.08093C8.65768 6.88643 8.34232 6.88643 8.14781 7.08093L6.63286 8.59586L5.90521 7.86821L8.5 2.67863ZM0.996094 13.5736L2.40919 14.2801C2.5494 14.3502 2.71442 14.3502 2.85464 14.2801L4.26773 13.5736V16.0039H0.996094V13.5736ZM5.26379 12.7677V8.63547L6.2807 9.65235C6.47517 9.84685 6.79054 9.84685 6.98504 9.65235L8.5 8.13742L10.015 9.65235C10.2094 9.84685 10.5248 9.84685 10.7193 9.65235L11.7362 8.63547V12.7677V16.0039H5.26379V12.7677ZM16.0039 16.0039H12.7323V13.5736L14.1454 14.2801C14.2856 14.3502 14.4506 14.3502 14.5908 14.2801L16.0039 13.5736V16.0039Z" fill="#39395B"/>
+                            </svg>
+                            Иркутск, ул. Лермонтова, д. 208, офис 105
+                        </div>
+                        <p class="header-top-call d-flex align-items-end flex-column">
+                            8 (3952) 62-52-92
+                            <span class="modal-call__btn">Заказать звонок</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-lg-flex">
+                <div class="col-12">
+                    <ul class="header-item d-flex justify-content-between">
+                        <li class="header-list"><a href="./specialists.html">Наши специалисты </a></li>
+                        <li class="header-list"><a href="./index.html">Технологический аудит и контроль </a></li>
+                        <li class="header-list"><a href="./audit.html">Решение проблем </a></li>
+                        <li class="header-list"><a href="./special.html">Акции </a></li>
+                        <li class="header-list"><a href="./reviews.html">Отзывы </a></li>
+                        <li class="header-list"><a href="./contacts.html">Контакты </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row d-lg-none">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="./index.html" class="header__logo">p-tsm.ru</a>
+                        <div class="d-flex align-items-center">
+                          <div class="me-4 modal-call__btn">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.9243 10.4401C12.0182 9.66506 11.0986 9.1956 10.2035 9.96945L9.6691 10.4372C9.27808 10.7767 8.55105 12.363 5.74013 9.12945C2.92979 5.89999 4.60218 5.39716 4.99379 5.06057L5.53115 4.59228C6.42149 3.81667 6.08549 2.84028 5.44335 1.83521L5.05583 1.22643C4.41076 0.223695 3.70832 -0.434842 2.81564 0.339597L2.3333 0.761061C1.93876 1.04848 0.835932 1.98272 0.56842 3.75755C0.246469 5.88711 1.26208 8.32574 3.58891 11.0015C5.91281 13.6783 8.18813 15.0229 10.3434 14.9995C12.1347 14.9802 13.2164 14.019 13.5548 13.6695L14.0389 13.2475C14.9292 12.4736 14.376 11.6857 13.4693 10.909L12.9243 10.4401Z" fill="#39395B"/>
+                            </svg>
+                          </div>
+                          <div class="menu-burger">
+                            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0.125V1.375H20V0.125H0ZM0 7.625H20V6.375H0V7.625ZM0 13.875H20V12.625H0V13.875Z" fill="#39395B"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu d-none">
+            <div class="menu-content">
+                <button class="menu__close">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.36719 3.36719L19.6325 19.6325" stroke="#525D7D" stroke-width="2.1875" stroke-miterlimit="10"/>
+                        <path d="M3.36719 19.6325L19.6325 3.36719" stroke="#525D7D" stroke-width="2.1875" stroke-miterlimit="10"/>
+                     </svg>
+                </button>
+                <ul class="menu-content-item ">
+                        <li class="menu-content-list"><a href="./specialists.html">Наши специалисты </a></li>
+                        <li class="menu-content-list"><a href="./index.html">Технологический аудит и контроль </a></li>
+                        <li class="menu-content-list"><a href="./audit.html">Решение проблем </a></li>
+                        <li class="menu-content-list"><a href="./special.html">Акции </a></li>
+                        <li class="menu-content-list"><a href="./reviews.html">Отзывы </a></li>
+                        <li class="menu-content-list"><a href="./contacts.html">Контакты </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Технологический аудит: как путь к безубыточному производству бетона -->
+    <div class="audit-faqs">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="title__text">Технологический аудит: как путь к безубыточному производству бетона</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                   <div class="audit-faqs-item">
+                    <div class="anim-faq d-flex">
+                        <div class="audit-faqs-list">
+                            <div class="faq d-flex justify-content-center flex-column align-items-center text-center">
+                                <img src="./assets/imgs/png/fq1.png" alt="" class="">
+                                <p class="faq__text">Хотите уменьшить расход цемента?</p>
+                            </div>
+                        </div>
+                        <div class="audit-faqs-list d-flex align-items-end">
+                            <div class="faq d-flex justify-content-center flex-column align-items-center text-center">
+                                <img src="./assets/imgs/png/fq2.png" alt="" class="">
+                                <p class="faq__text">Нужно внедрить современные классы бетонов?</p>
+                            </div>
+                        </div>
+                        <div class="audit-faqs-list">
+                            <div class="faq d-flex justify-content-center flex-column align-items-center text-center">
+                                <img src="./assets/imgs/png/fq3.png" alt="" class="">
+                                <p class="faq__text">Не можете подобрать состав бетона?</p>
+                            </div>
+                        </div>
+                        <div class="audit-faqs-list d-flex align-items-end">
+                            <div class="faq d-flex justify-content-center flex-column align-items-center text-center">
+                                <img src="./assets/imgs/png/fq4.png" alt="" class="">
+                                <p class="faq__text">Проблемы при производстве газобетона?</p>
+                            </div>
+                        </div>
+                        <div class="audit-faqs-list">
+                            <div class="faq d-flex justify-content-center flex-column align-items-center text-center">
+                                <img src="./assets/imgs/png/fq5.png" alt="" class="">
+                                <p class="faq__text">Нужны технологические карты?</p>
+                            </div>
+                        </div>
+                        <div class="audit-faqs-list d-flex align-items-end">
+                            <div class="faq d-flex justify-content-center flex-column align-items-center text-center">
+                                <img src="./assets/imgs/png/fq6.png" alt="" class="">
+                                <p class="faq__text">Сложности с изготовлением вибропрессован-ного бетона?</p>
+                            </div>
+                        </div>
+                        <div class="audit-faqs-list">
+                            <div class="faq d-flex justify-content-center flex-column align-items-center text-center">
+                                <img src="./assets/imgs/png/fq7.png" alt="" class="">
+                                <p class="faq__text">Получать больше заказов?</p>
+                            </div>
+                        </div>
+                        <div class="audit-faqs-list d-flex align-items-end">
+                            <div class="faq d-flex justify-content-center flex-column align-items-center text-center">
+                                <img src="./assets/imgs/png/fq8.png" alt="" class="">
+                                <p class="faq__text">.. и в итоге повысить прибыль?</p>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-lg-5 ps-lg-5">
+                    <p class="audit-faqs__title">Раз вы читаете это, значит 
+                        уже пробовали, но не получили 
+                        нужной отдачи?</p>
+                    <p class="audit-faqs__text">Заказ технологического аудита и сопровождения 
+                        у непрофессионалов может привести только 
+                        к значительным денежным затратам. Хотите получить требуемый результат? Обращайтесь к нам! Разберемся во всех проблемах, которые не дают вашему производству выпускать качественный продукт по выгодной себестоимости. За нашими плечами внушительный опыт в 5 лет, а о надежности свидетельствуют многочисленные положительные отзывы клиентов и успешные кейсы.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скорее всего, на вашем производстве допущена одна из этих ошибок -->
+    <div class="mistakes ">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="title__text">Скорее всего, на вашем производстве допущена одна из этих ошибок</p>
+                    <p class="title__text-sub">Легко решаем проблемы и устраняем ошибки любой сложности</p></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="./assets/imgs/png/error.png" alt="" class="mistakes__img d-none d-sm-block">
+                    <img src="./assets/imgs/png/error-mob.png" alt="" class="mistakes__img d-sm-none">
+                    <div class="mistakes-item d-none d-sm-flex justify-content-between flex-wrap">
+                        <div class="mistakes-card text-center wow fadeInUp" data-wow-delay="">
+                            <img src="./assets/imgs/png/er.png" alt="" class="mistakes__png">
+                            <p class="mistakes__text">Отсутствие <span>нужного <br> состава</span> смеси</p>
+                        </div>
+                        <div class="mistakes-card text-center wow fadeInUp" data-wow-delay="0.5s">
+                            <img src="./assets/imgs/png/er.png" alt="" class="mistakes__png">
+                            <p class="mistakes__text">Отсутствие <span>качественных составляющих:</span> цемента, инертных материалов, добавок </p>
+                        </div>
+                        <div class="mistakes-card text-center wow fadeInUp" data-wow-delay="1s">
+                            <img src="./assets/imgs/png/er.png" alt="" class="mistakes__png">
+                            <p class="mistakes__text">Не правильно подобранные  <span>химические добавки</span></p>
+                        </div>
+                        <div class="mistakes-card text-center wow fadeInUp" data-wow-delay="1.5s">
+                            <img src="./assets/imgs/png/er.png" alt="" class="mistakes__png">
+                            <p class="mistakes__text">Не опытный  <span> штатный технолог</span></p>
+                        </div>
+                        <div class="mistakes-card text-center wow fadeInUp" data-wow-delay="2s">
+                            <img src="./assets/imgs/png/er.png" alt="" class="mistakes__png">
+                            <p class="mistakes__text">Не правильная  <span>работа БРУ</span> </p>
+                        </div>
+                        <div class="mistakes-card text-center wow fadeInUp" data-wow-delay="2.5s">
+                            <img src="./assets/imgs/png/er.png" alt="" class="mistakes__png">
+                            <p class="mistakes__text"> <span>Халатность персонала</span></p>
+                        </div>
+                    </div>
+                    <div class="mistakes-info-box position-relative d-sm-none">
+                        <div class="mistakes-filter-btns d-flex position-absolute">
+                            <label for="rad1" class="mistakes__lab" data-radio="filter-1">
+                                <input type="radio" id="rad1" name="checkList" class="mistakes__rad d-none" checked>
+                                <div class="mistakes__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.159297 8.49193C0.356731 8.80838 0.699341 9 1.0739 9H7.9261C8.30066 9 8.64327 8.80838 8.8407 8.49193C9.03523 8.17257 9.05265 7.78064 8.88715 7.44676L5.45814 0.592249C5.27522 0.229349 4.90938 0 4.5 0C4.09062 0 3.72478 0.229349 3.54186 0.592252L0.112847 7.44676C-0.0526509 7.78355 -0.0352329 8.17257 0.159297 8.49193ZM4.93552 2.8916V5.65838C4.93552 5.89936 4.74099 6.09387 4.5 6.09387C4.25901 6.09387 4.06448 5.89936 4.06448 5.65838V2.8916C4.06448 2.65065 4.25901 2.45612 4.5 2.45612C4.74099 2.45612 4.93552 2.65065 4.93552 2.8916ZM4.06448 7.24644V6.93C4.06448 6.68903 4.25901 6.49452 4.5 6.49452C4.74099 6.49452 4.93552 6.68903 4.93552 6.93V7.24644C4.93552 7.48451 4.74099 7.68193 4.5 7.68193C4.25901 7.68193 4.06448 7.48451 4.06448 7.24644Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label for="rad2" class="mistakes__lab" data-radio="filter-2">
+                                <input type="radio" id="rad2" name="checkList" class="mistakes__rad d-none">
+                                <div class="mistakes__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.159297 8.49193C0.356731 8.80838 0.699341 9 1.0739 9H7.9261C8.30066 9 8.64327 8.80838 8.8407 8.49193C9.03523 8.17257 9.05265 7.78064 8.88715 7.44676L5.45814 0.592249C5.27522 0.229349 4.90938 0 4.5 0C4.09062 0 3.72478 0.229349 3.54186 0.592252L0.112847 7.44676C-0.0526509 7.78355 -0.0352329 8.17257 0.159297 8.49193ZM4.93552 2.8916V5.65838C4.93552 5.89936 4.74099 6.09387 4.5 6.09387C4.25901 6.09387 4.06448 5.89936 4.06448 5.65838V2.8916C4.06448 2.65065 4.25901 2.45612 4.5 2.45612C4.74099 2.45612 4.93552 2.65065 4.93552 2.8916ZM4.06448 7.24644V6.93C4.06448 6.68903 4.25901 6.49452 4.5 6.49452C4.74099 6.49452 4.93552 6.68903 4.93552 6.93V7.24644C4.93552 7.48451 4.74099 7.68193 4.5 7.68193C4.25901 7.68193 4.06448 7.48451 4.06448 7.24644Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label for="rad3" class="mistakes__lab" data-radio="filter-3">
+                                <input type="radio" id="rad3" name="checkList" class="mistakes__rad d-none">
+                                <div class="mistakes__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.159297 8.49193C0.356731 8.80838 0.699341 9 1.0739 9H7.9261C8.30066 9 8.64327 8.80838 8.8407 8.49193C9.03523 8.17257 9.05265 7.78064 8.88715 7.44676L5.45814 0.592249C5.27522 0.229349 4.90938 0 4.5 0C4.09062 0 3.72478 0.229349 3.54186 0.592252L0.112847 7.44676C-0.0526509 7.78355 -0.0352329 8.17257 0.159297 8.49193ZM4.93552 2.8916V5.65838C4.93552 5.89936 4.74099 6.09387 4.5 6.09387C4.25901 6.09387 4.06448 5.89936 4.06448 5.65838V2.8916C4.06448 2.65065 4.25901 2.45612 4.5 2.45612C4.74099 2.45612 4.93552 2.65065 4.93552 2.8916ZM4.06448 7.24644V6.93C4.06448 6.68903 4.25901 6.49452 4.5 6.49452C4.74099 6.49452 4.93552 6.68903 4.93552 6.93V7.24644C4.93552 7.48451 4.74099 7.68193 4.5 7.68193C4.25901 7.68193 4.06448 7.48451 4.06448 7.24644Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label for="rad4" class="mistakes__lab" data-radio="filter-4">
+                                <input type="radio" id="rad4" name="checkList" class="mistakes__rad d-none">
+                                <div class="mistakes__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.159297 8.49193C0.356731 8.80838 0.699341 9 1.0739 9H7.9261C8.30066 9 8.64327 8.80838 8.8407 8.49193C9.03523 8.17257 9.05265 7.78064 8.88715 7.44676L5.45814 0.592249C5.27522 0.229349 4.90938 0 4.5 0C4.09062 0 3.72478 0.229349 3.54186 0.592252L0.112847 7.44676C-0.0526509 7.78355 -0.0352329 8.17257 0.159297 8.49193ZM4.93552 2.8916V5.65838C4.93552 5.89936 4.74099 6.09387 4.5 6.09387C4.25901 6.09387 4.06448 5.89936 4.06448 5.65838V2.8916C4.06448 2.65065 4.25901 2.45612 4.5 2.45612C4.74099 2.45612 4.93552 2.65065 4.93552 2.8916ZM4.06448 7.24644V6.93C4.06448 6.68903 4.25901 6.49452 4.5 6.49452C4.74099 6.49452 4.93552 6.68903 4.93552 6.93V7.24644C4.93552 7.48451 4.74099 7.68193 4.5 7.68193C4.25901 7.68193 4.06448 7.48451 4.06448 7.24644Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label for="rad5" class="mistakes__lab" data-radio="filter-5">
+                                <input type="radio" id="rad5" name="checkList" class="mistakes__rad d-none">
+                                <div class="mistakes__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.159297 8.49193C0.356731 8.80838 0.699341 9 1.0739 9H7.9261C8.30066 9 8.64327 8.80838 8.8407 8.49193C9.03523 8.17257 9.05265 7.78064 8.88715 7.44676L5.45814 0.592249C5.27522 0.229349 4.90938 0 4.5 0C4.09062 0 3.72478 0.229349 3.54186 0.592252L0.112847 7.44676C-0.0526509 7.78355 -0.0352329 8.17257 0.159297 8.49193ZM4.93552 2.8916V5.65838C4.93552 5.89936 4.74099 6.09387 4.5 6.09387C4.25901 6.09387 4.06448 5.89936 4.06448 5.65838V2.8916C4.06448 2.65065 4.25901 2.45612 4.5 2.45612C4.74099 2.45612 4.93552 2.65065 4.93552 2.8916ZM4.06448 7.24644V6.93C4.06448 6.68903 4.25901 6.49452 4.5 6.49452C4.74099 6.49452 4.93552 6.68903 4.93552 6.93V7.24644C4.93552 7.48451 4.74099 7.68193 4.5 7.68193C4.25901 7.68193 4.06448 7.48451 4.06448 7.24644Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label for="rad6" class="mistakes__lab" data-radio="filter-6">
+                                <input type="radio" id="rad6" name="checkList" class="mistakes__rad d-none">
+                                <div class="mistakes__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.159297 8.49193C0.356731 8.80838 0.699341 9 1.0739 9H7.9261C8.30066 9 8.64327 8.80838 8.8407 8.49193C9.03523 8.17257 9.05265 7.78064 8.88715 7.44676L5.45814 0.592249C5.27522 0.229349 4.90938 0 4.5 0C4.09062 0 3.72478 0.229349 3.54186 0.592252L0.112847 7.44676C-0.0526509 7.78355 -0.0352329 8.17257 0.159297 8.49193ZM4.93552 2.8916V5.65838C4.93552 5.89936 4.74099 6.09387 4.5 6.09387C4.25901 6.09387 4.06448 5.89936 4.06448 5.65838V2.8916C4.06448 2.65065 4.25901 2.45612 4.5 2.45612C4.74099 2.45612 4.93552 2.65065 4.93552 2.8916ZM4.06448 7.24644V6.93C4.06448 6.68903 4.25901 6.49452 4.5 6.49452C4.74099 6.49452 4.93552 6.68903 4.93552 6.93V7.24644C4.93552 7.48451 4.74099 7.68193 4.5 7.68193C4.25901 7.68193 4.06448 7.48451 4.06448 7.24644Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="mistakes-info d-flex justify-content-center align-items-center text-center">
+                            <div class="mistakes-info__text filter-1">Отсутствие <span>нужного <br> состава</span> смеси</div>
+                            <div class="mistakes-info__text filter-2">Отсутствие <span>качественных составляющих:</span> цемента, инертных материалов, добавок</div>
+                            <div class="mistakes-info__text filter-3">Не правильно подобранные  <span>химические добавки</span></div>
+                            <div class="mistakes-info__text filter-4">Не опытный  <span> штатный технолог</span></div>
+                            <div class="mistakes-info__text filter-5"> Не правильная  <span>работа БРУ</span> </div>
+                            <div class="mistakes-info__text filter-6">  <span>Халатность персонала</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- При составлении первичного аудита мы проверяем все ошибки.А всего в нашей проверки более 30+ пунктов! -->
+    <div class="points">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="title__text">При составлении первичного аудита мы проверяем все ошибки.А всего в нашей проверки более <span>30+ пунктов!</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="points-item">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/imgs/png/pr1.png" alt="">
+                            <p class="points__title">Работаем с существующими составами</p>
+                        </div>
+                        <ul class="">
+                            <li class="points-list">Проверяем и корректируем карты составов</li>
+                            <li class="points-list">Проверяем наличие компонентов, правильность использования, соблюдение технологии</li>
+                            <li class="points-list">Проводим начальную оптимизацию составов, смотрим динамику изменения важных параметров</li>
+                            <li class="points-list">Проверяем возможность снижения себестоимости продукции</li>
+                        </ul>
+                    </div>
+                    <div class="points-item">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/imgs/png/pr2.png" alt="">
+                            <p class="points__title">Настройка оборудования БРУ и ПО</p>
+                        </div>
+                        <ul class="">
+                            <li class="points-list">Проверяем технологическую составляющую оборудования</li>
+                            <li class="points-list">Проверяем корректность показаний с датчиков</li>
+                            <li class="points-list">Проверяем наличие и качество поступления компонентов</li>
+                            <li class="points-list">Выявляем возможность оптимизации настройки существующего оборудования</li>
+                            <li class="points-list">Проверяем корректность работы ПО</li>
+                            <li class="points-list">Подготавливаем рекомендации для создателей ПО</li>
+                        </ul>
+                    </div>
+                    <div class="points-item">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/imgs/png/pr3.png" alt="">
+                            <p class="points__title">Работаем с поставщиками компонентов (щебень, песок, химия)</p>
+                        </div>
+                        <ul class="">
+                            <li class="points-list">Проводим анализ доступности качественных инертных материалов в регионе</li>
+                            <li class="points-list">Запрашиваем тестовые образцы</li>
+                            <li class="points-list">Проводим входной контроль и анализы</li>
+                            <li class="points-list">Выезжаем к поставщикам для оценки их возможностей</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="points-item">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/imgs/png/pr4.png" alt="">
+                            <p class="points__title">Оптимизируем работу штатного технолога</p>
+                        </div>
+                        <ul class="">
+                            <li class="points-list">Проводим анализ действий технолога</li>
+                            <li class="points-list">Ознакомлеваемся с документооборотом</li>
+                            <li class="points-list">Выявление критических ошибок и необходимых корректировок "немедленно"</li>
+                            <li class="points-list">Разработка и доработка регламентов, инструкций и др.</li>
+                            <li class="points-list">Выявляем уровень профессионализма штатной службы технологов</li>
+                            <li class="points-list">Консультируем по подбору и обучению персонала для технологической службы</li>
+                        </ul>
+                    </div>
+                    <div class="points-item">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/imgs/png/pr5.png" alt="">
+                            <p class="points__title">Другие работы</p>
+                        </div>
+                        <ul class="">
+                            <li class="points-list">Проверяем наличие сертифицикации и декларирования продукции</li>
+                            <li class="points-list">Проводим подготовительную работу по сертификации и декларированию</li>
+                            <li class="points-list">Оформление протоколов испытаний/карт подбора состава в аттестованной лаборатории</li>
+                            <li class="points-list">Помощь в работе с нормативной документацией РФ</li>
+                            <li class="points-list">Помощь в работе с рекламациями и проблемными клиентами</li>
+                        </ul>
+                    </div>
+                    <div class="points-item">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/imgs/png/pr6.png" alt="">
+                            <p class="points__title">Проводим анализ существующих составов и качества готовой продукции</p>
+                        </div>
+                        <ul class="">
+                            <li class="points-list">Отбор проб и отправка в лабораторию с выдачей официального заключения</li>
+                            <li class="points-list">Ознакомление с проблемами клиентов</li>
+                            <li class="points-list">Оптимизация составов в оптимальном соотношении цена/качество</li>
+                        </ul>
+                    </div>
+                    <div class="points-item">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/imgs/png/pr7.png" alt="">
+                            <p class="points__title">Выбор способов оптимизации найденных проблем</p>
+                        </div>
+                        <ul class="">
+                            <li class="points-list">Группировка и анализ найденных проблем</li>
+                            <li class="points-list">Формируем список проблем, которые будут решаться</li>
+                            <li class="points-list">Формируем пути решения с ежемесячным планом на последующие месяцы</li>
+                        </ul>
+                    </div>
+                    <p class="points-all">И многое другое..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Решение - глубокий анализ и эффективное сопровождение -->
+    <div class="decision">
+        <div class="container ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="title__text">Решение - глубокий анализ и эффективное сопровождение</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-5">
+                    <div class="audit-box d-flex">
+                        <div class="audit-item item1 d-flex flex-column align-items-center justify-content-center wow flipInX" data-wow-delay="">
+                            <img src="./assets/imgs/png/a1.png" alt="">
+                            <p class="audit-item__text mt-3"><span>Полный анализ</span> вашего производства</p>
+                        </div>
+                        <div class="audit-item item2 d-flex flex-column align-items-center justify-content-center wow flipInX" data-wow-delay="0.5s">
+                            <img src="./assets/imgs/png/a2.png" alt="">
+                            <p class="audit-item__text mt-3">Понятный план работ на <span>1-2 месяца</span> вперед</p>
+                        </div>
+                        <div class="audit-item item3 d-flex flex-column align-items-center justify-content-center wow flipInX" data-wow-delay="1s">
+                            <img src="./assets/imgs/png/a3.png" alt="">
+                            <p class="audit-item__text mt-3">Создание <span>перспективной</span> структуры работы вашего производства</p>
+                        </div>
+                        <div class="audit-item item4 d-flex flex-column align-items-center justify-content-center wow flipInX" data-wow-delay="1.5s">
+                            <img src="./assets/imgs/png/a4.png" alt="">
+                            <p class="audit-item__text mt-3"><span>Ежемесячные работы</span> с использованием внутренней системы аналитики</p>
+                        </div>
+                        <div class="audit-item item5 d-flex flex-column align-items-center justify-content-center wow flipInX" data-wow-delay="2s">
+                            <img src="./assets/imgs/png/a5.png" alt="">
+                            <p class="audit-item__text mt-3"><span>Подробные отчеты</span> о проделанной работе за каждый месяц</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-none d-sm-block ">
+                    <div class="d-flex align-items-center justify-content-center flex-column flex-md-row">
+                        <div class="decision-item d-flex align-items-center position-relative">
+                            <div class="decision-list wow flipInY" data-wow-delay="">
+                                <p class="decision-list__title">59 900</p>
+                                <p class="decision-list__text">рублей аудит</p>
+                            </div>
+                            <div class="decision-list wow flipInY" data-wow-delay="0.5s">
+                                <p class="decision-list__title">45 000</p>
+                                <p class="decision-list__text">рублей в месяц</p>
+                            </div>
+                            <div class="plus-circle">+</div>
+                        </div>
+                        <div class="equal">=</div>
+                        <div class="answer wow flipInY" data-wow-delay="1s">
+                            <p class="answer__title">100+</p>
+                            <p class="answer__text">рекомендаций 
+                                по правильному изготовлению 
+                                бетонов</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <button class="audit-card__btn modal__btn"> 
+                            Получить бесплатную консультацию
+                        </button>
+                      </div>
+                </div>
+                
+                <div class="col-12 d-sm-none">
+                    <div class="audit-card d-flex align-items-center justify-content-between flex-sm-row flex-column">
+                        <div class="plus">
+                          <span class="plus__text">+</span>
+                        </div>
+                        <div class="d-flex flex-row flex-sm-column justify-content-between h-100 middle">
+                          <div class="audit-card-left d-flex flex-column justify-content-sm-center">
+                            <p class="audit-card-sup__text">59 900</p>
+                            <p class="audit-card-sub__text">рублей аудит</p>
+                          </div>
+                          <div class="audit-card-right d-flex flex-column justify-content-center">
+                            <p class="audit-card-sup__text">45 000</p>
+                            <p class="audit-card-sub__text">рублей в месяц</p>
+                          </div>
+                        </div>
+                       <div class="middle">
+                        <div class="d-flex align-items-center justify-content-between w-100">
+                            <p class="audit-card__middle">100+</p>
+                            <p class="audit-card__middle-sub">рекомендаций <br>
+                                по правильному <br> изготовлению <br>
+                                бетонов</p>
+                        </div>
+                        <button class="audit-card__btn modal__btn"> 
+                            Получить бесплатную консультацию
+                        </button>
+                       </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Проблемы с которыми мы с легкостью справляемся -->
+    <div class="cope">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="title__text">Проблемы с которыми мы с легкостью справляемся</p>
+                    <p class="title__text-sub">Список только самых распространных</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="./assets/imgs/png/cope.png" alt="" class="cope__img">
+                </div>
+                <div class="col-12">
+                    <div class="cope-box d-flex justify-content-between flex-wrap">
+                        <div class="cope-item">
+                            <div class="cope-list wow flipInY" data-wow-delay="">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>подбор нужных составов</span> бетонных смесей</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="0.5s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>подбор оптимальной химии</span> под необходимые задачи 
+                                    и показатели</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="1s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>подбор состава фибробетона</span> на местных материалах</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="1.5s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text">подбор состава вибропрессованного бетона (дорожные изделия, бордюр, тротуарная плитка)</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="2s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>помощь в оформлении инструкций и регламентов</span> для производства</p>
+                            </div>
+                        </div>
+
+                        <div class="cope-item">
+                            <div class="cope-list wow flipInX" data-wow-delay="">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>снижение себестоимости</span> товарного бетона и других жидких растворов</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="0.5s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>решение проблем, связанных с жалобами 
+                                    от заказчиков:</span> растрескивание, плотность..</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="1s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>упрощение технологического процесса производства</span> <small>(оптимизация дозирования материалов, оптимизация приготовления бетонной смеси)</small></p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="1.5s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>помощь в оформлении деклараций/сертификатов</span> на бетон и бетонные изделия</p>
+                            </div>
+                        </div>
+
+                        <div class="cope-item">
+                            <div class="cope-list wow flipInX" data-wow-delay="">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>снижение себестоимости</span> производства блоков из легкого/ячеистого бетона</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="0.5s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>подбор состава гидротехнического бетона</span> 
+                                    в т.ч. с высокой морозостойкостью 
+                                    и водонепроницаемостью</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="1s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>подбор состава бетона 
+                                    с высокой сохраняемостью</span> во времени</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="1.5s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>помощь в разработке ТУ</span> для любых бетонных изделий</p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="cope-item">
+                            <div class="cope-list wow flipInX" data-wow-delay="">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>подбор нужных составов</span> бетонных смесей</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="0.5s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>подбор состава самоуплотняющегося</span> бетона на местных материалах</p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="1s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>подборы составов легкого/ячеистого бетона</span> <small>(газобетон, полистиролбетон, керамзитобетон, вермикулитобетон, перлитобетон)</small></p>
+                            </div>
+                            <div class="cope-list wow flipInX" data-wow-delay="1.5s">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.15381" cy="9" r="9" fill="#24B300"/>
+                                    <g clip-path="url(#clip0_260_4972)">
+                                    <path d="M8.76056 11.8176C8.3839 12.1943 7.77275 12.1943 7.39627 11.8176L5.28249 9.70379C4.90584 9.32731 4.90584 8.71614 5.28249 8.33966C5.65897 7.96299 6.27012 7.96299 6.64678 8.33966L7.90617 9.5989C8.00125 9.69379 8.15558 9.69379 8.25084 9.5989L11.6609 6.18875C12.0374 5.81208 12.6485 5.81208 13.0252 6.18875C13.2061 6.36963 13.3077 6.61504 13.3077 6.87081C13.3077 7.12659 13.2061 7.372 13.0252 7.55288L8.76056 11.8176Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_4972">
+                                    <rect width="8.30769" height="8.30769" fill="white" transform="translate(5 4.84766)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="cope-list__text"><span>помощь в комплектовании 
+                                    и аттестации</span> производственной лаборатории</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подготовка и приведение в порядок всей нормативной документации -->
+    <div class="documentation">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="title__text">Подготовка и приведение в порядок всей нормативной документации</p>
+                    <p class="title__text-sub">с прохождением процедуры сертификации и декларирования</p>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-6">
+                    <div class="documentation-box box1 position-relative">
+                        <div class="documentation-item">
+                            <div class="documentation-num">1</div>
+                            <p class="documentation__title">Разработаем технологические регламенты 
+                                и инструкции:</p>
+                            <ul class="">
+                                <li class="documentation-list">полное описание технологического процесса производства изделия, разбитого на блоки;</li>
+                                <li class="documentation-list">описание применяемых материалов 
+                                    в производстве</li>
+                                <li class="documentation-list">описание и схемы оборудования</li>
+                                <li class="documentation-list">состав бетона и изделия</li>
+                                <li class="documentation-list">самые часто встречающиеся ошибки 
+                                    и методы их быстрого решения</li>
+                            </ul>
+                            <img src="./assets/imgs/png/d1.png" alt="" class="img position-absolute">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="documentation-box position-relative">
+                        <div class="documentation-item">
+                            <div class="documentation-num">2</div>
+                            <p class="documentation__title">Сертифицируем любое выпускаемое бетонное изделие: <span>железобетон, строительные блоки, товарный бетон, сухие строительные смеси, тротуарную плитку и бордюры</span> </p>
+                            <img src="./assets/imgs/png/d2.png" alt="" class="img position-absolute">
+                        </div>
+                    </div>
+                    <div class="documentation-box position-relative">
+                        <div class="documentation-item">
+                            <div class="documentation-num">3</div>
+                            <p class="documentation__title">Задекларируем товарный бетон и сухие строительные смеси. <br>
+                                <small>(Обязательная процедура!)</small></p>
+                            <img src="./assets/imgs/png/d3.png" alt="" class="img position-absolute">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Собственная аттестованная лаборатория -->
+    <div class="laboratory">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 text-center">
+                    <p class="title__text">Собственная аттестованная лаборатория</p>
+                    <p class="title__text-sub">Не верим никому и проводим сами</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 d-flex align-items-lg-end justify-content-between flex-wrap">
+                    <div class="d-flex justify-content-center align-items-center w-100 d-lg-none">
+                        <img src="./assets/imgs/png/lab.png" alt="" class="laboratory__img">
+                    </div>
+                    
+                    <div class="laboratory-item d-flex d-flex align-items-start">
+                        <div class="circle">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 10C6.11875 10 5 11.1187 5 12.5C5 13.8813 6.11875 15 7.5 15C8.88125 15 10 13.8813 10 12.5C10 11.1187 8.88125 10 7.5 10ZM2.5 5C1.11875 5 0 6.11875 0 7.5C0 8.88125 1.11875 10 2.5 10C3.88125 10 5 8.88125 5 7.5C5 6.11875 3.88125 5 2.5 5ZM2.5 15C1.11875 15 0 16.1187 0 17.5C0 18.8813 1.11875 20 2.5 20C3.88125 20 5 18.8813 5 17.5C5 16.1187 3.88125 15 2.5 15ZM17.5 5C18.8813 5 20 3.88125 20 2.5C20 1.11875 18.8813 0 17.5 0C16.1187 0 15 1.11875 15 2.5C15 3.88125 16.1187 5 17.5 5ZM12.5 15C11.1187 15 10 16.1187 10 17.5C10 18.8813 11.1187 20 12.5 20C13.8813 20 15 18.8813 15 17.5C15 16.1187 13.8813 15 12.5 15ZM17.5 10C16.1187 10 15 11.1187 15 12.5C15 13.8813 16.1187 15 17.5 15C18.8813 15 20 13.8813 20 12.5C20 11.1187 18.8813 10 17.5 10ZM12.5 5C11.1187 5 10 6.11875 10 7.5C10 8.88125 11.1187 10 12.5 10C13.8813 10 15 8.88125 15 7.5C15 6.11875 13.8813 5 12.5 5ZM7.5 0C6.11875 0 5 1.11875 5 2.5C5 3.88125 6.11875 5 7.5 5C8.88125 5 10 3.88125 10 2.5C10 1.11875 8.88125 0 7.5 0Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <p class="laboratory-item__text">испытания щебня/песка/отсева;</p>
+                    </div>
+                    <div class="laboratory-item d-flex align-items-start">
+                        <div class="circle">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.8126 5.3125C16.9168 5.41667 17.021 5.5506 17.1251 5.71429H11.8573V0.446429C12.021 0.550595 12.1549 0.654762 12.2591 0.758929L16.8126 5.3125ZM11.5001 7.14286H17.5716V18.9286C17.5716 19.2262 17.4674 19.4792 17.2591 19.6875C17.0507 19.8958 16.7978 20 16.5001 20H1.50014C1.20252 20 0.949544 19.8958 0.741211 19.6875C0.532878 19.4792 0.428711 19.2262 0.428711 18.9286V1.07143C0.428711 0.77381 0.532878 0.520833 0.741211 0.3125C0.949544 0.104167 1.20252 0 1.50014 0H10.4287V6.07143C10.4287 6.36905 10.5329 6.62202 10.7412 6.83036C10.9495 7.03869 11.2025 7.14286 11.5001 7.14286ZM13.2859 15.3571V14.6429C13.2859 14.5387 13.2524 14.4531 13.1854 14.3862C13.1184 14.3192 13.0329 14.2857 12.9287 14.2857H5.07157C4.9674 14.2857 4.88184 14.3192 4.81487 14.3862C4.74791 14.4531 4.71443 14.5387 4.71443 14.6429V15.3571C4.71443 15.4613 4.74791 15.5469 4.81487 15.6138C4.88184 15.6808 4.9674 15.7143 5.07157 15.7143H12.9287C13.0329 15.7143 13.1184 15.6808 13.1854 15.6138C13.2524 15.5469 13.2859 15.4613 13.2859 15.3571ZM13.2859 12.5V11.7857C13.2859 11.6815 13.2524 11.596 13.1854 11.529C13.1184 11.4621 13.0329 11.4286 12.9287 11.4286H5.07157C4.9674 11.4286 4.88184 11.4621 4.81487 11.529C4.74791 11.596 4.71443 11.6815 4.71443 11.7857V12.5C4.71443 12.6042 4.74791 12.6897 4.81487 12.7567C4.88184 12.8237 4.9674 12.8571 5.07157 12.8571H12.9287C13.0329 12.8571 13.1184 12.8237 13.1854 12.7567C13.2524 12.6897 13.2859 12.6042 13.2859 12.5ZM13.2859 9.64286V8.92857C13.2859 8.8244 13.2524 8.73884 13.1854 8.67188C13.1184 8.60491 13.0329 8.57143 12.9287 8.57143H5.07157C4.9674 8.57143 4.88184 8.60491 4.81487 8.67188C4.74791 8.73884 4.71443 8.8244 4.71443 8.92857V9.64286C4.71443 9.74702 4.74791 9.83259 4.81487 9.89955C4.88184 9.96652 4.9674 10 5.07157 10H12.9287C13.0329 10 13.1184 9.96652 13.1854 9.89955C13.2524 9.83259 13.2859 9.74702 13.2859 9.64286Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <p class="laboratory-item__text">подбор состава бетона с выдачей официальной карты подбора состава;</p>
+                    </div>
+                    <div class="laboratory-item position-relative d-none d-lg-block">
+                        <img src="./assets/imgs/png/lab.png" alt="" class="laboratory__img position-absolute">
+                    </div>
+                    <div class="laboratory-item d-flex align-items-start">
+                        <div class="circle">
+                            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.96008 24.7978V21.5L8.21444 22.5358L7.36008 21.9981V20.8391L9.96008 19.2863V17.119L7.88008 18.3935V16.0972L5.80008 17.1861V20.3009L4.94052 20.9405L4.24008 20.3627V18.2765L1.3416 19.8999L0.0800781 19.3805V18.0654L3.03628 16.417L1.12008 15.4695V14.2631L2.22404 13.6771L4.93532 15.2725L6.81356 14.1888L6.77092 14.155L4.86512 13.051L6.72048 11.8925L4.86044 10.8093L2.14968 12.3963L1.12008 11.8925V10.6928L2.96192 9.66425L0.0800781 8.07669V6.76161L1.287 6.18233L4.24008 7.84477V5.72525L5.01228 5.13921L6.02264 5.75281L5.99352 8.92741L7.90348 10.0309L7.92064 7.78913L9.96008 8.88061V6.71377L7.36008 5.16001V4.00873L8.21444 3.46273L9.96008 4.49857V1.20801L10.997 0.519531L12.0401 1.20801V4.49857L14.0712 3.44245L15.1601 4.07633V5.11217L12.0401 6.71377V8.88061L14.1201 7.70177V10.0595L16.2001 8.97577V5.58329L16.9567 5.13297L17.7601 5.58277V7.74961L20.7979 6.14801L21.9201 6.78137V8.00805L19.0627 9.65645L20.8801 10.6725V11.8446L19.9285 12.3625L17.1584 10.7204L15.2454 11.9403L17.0908 13.0989L15.1882 14.2023L17.1496 15.2381L19.9519 13.6854L20.8801 14.3177V15.4357L19.1537 16.417L21.9201 18.0654V19.3602L20.6086 19.8994L17.7601 18.3457V20.4023L16.9697 20.9477L16.2001 20.4023V17.2812L14.1201 16.1305V18.2978L12.0401 17.1185V19.2858L14.6401 20.8385V22.0652L13.7836 22.5353L12.0401 21.5005V24.7983L10.997 25.4795L9.96008 24.7978ZM9.19776 13.0474L10.1785 14.5595H12.0058L12.8445 13.0474L11.9584 11.4395H10.1312L9.19776 13.0474Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <p class="laboratory-item__text">испытания бетона на морозостойкость;</p>
+                    </div>
+                    <div class="laboratory-item d-flex align-items-start">
+                        <div class="circle">
+                            <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.73319 0.646375C6.70214 0.399125 6.29619 0.399125 6.26629 0.646375C5.25084 8.81942 0.0585938 10.5042 0.0585938 16.1852C0.0585938 19.6961 3.00719 22.5412 6.49974 22.5412C9.99114 22.5412 12.9397 19.695 12.9397 16.1852C12.9397 10.5042 7.74864 8.81942 6.73319 0.646375ZM5.75224 9.68193C5.68439 9.93377 5.61079 10.1925 5.53489 10.4616C5.07374 12.0992 4.55049 13.9565 4.55049 16.1035C4.55049 17.2673 3.86279 17.6802 3.22109 17.6802C3.04576 17.6794 2.87229 17.6441 2.71059 17.5763C2.54889 17.5086 2.40213 17.4096 2.27868 17.2851C2.15523 17.1605 2.05752 17.0129 1.99112 16.8507C1.92472 16.6884 1.89094 16.5146 1.89169 16.3393C1.89169 13.8012 3.11299 12.1429 4.19169 10.6813C4.53094 10.2236 4.84949 9.79002 5.10824 9.35878C5.22669 9.16098 5.54524 9.17017 5.69014 9.36567C5.75799 9.45767 5.78099 9.57498 5.75224 9.68193Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <p class="laboratory-item__text">испытания бетона на водонепроницаемость;</p>
+                    </div>
+                    <div class="laboratory-item d-flex align-items-start">
+                        <div class="circle">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.125 6.125H3.875C3.67627 6.12559 3.48585 6.2048 3.34533 6.34533C3.2048 6.48585 3.12559 6.67627 3.125 6.875V15.875H2.375V6.5C2.37589 6.20191 2.4947 5.91627 2.70549 5.70549C2.91627 5.4947 3.20191 5.37589 3.5 5.375H9.125V6.125Z" fill="white"/>
+                                <path d="M11.375 2.375H10.625V3.875H11.375V2.375Z" fill="white"/>
+                                <path d="M12.125 4.625H9.875V6.875H12.125V4.625Z" fill="white"/>
+                                <path d="M7.25 1.25C7.25 1.15054 7.28951 1.05516 7.35983 0.984835C7.43016 0.914509 7.52554 0.875 7.625 0.875H14.375C14.4745 0.875 14.5698 0.914509 14.6402 0.984835C14.7105 1.05516 14.75 1.15054 14.75 1.25C14.75 1.34946 14.7105 1.44484 14.6402 1.51516C14.5698 1.58549 14.4745 1.625 14.375 1.625H7.625C7.52554 1.625 7.43016 1.58549 7.35983 1.51516C7.28951 1.44484 7.25 1.34946 7.25 1.25Z" fill="white"/>
+                                <path d="M11.375 7.625H10.625V9.125H11.375V7.625Z" fill="white"/>
+                                <path d="M12.125 10.625H9.875V10.25C9.875 10.1505 9.91451 10.0552 9.98483 9.98483C10.0552 9.91451 10.1505 9.875 10.25 9.875H11.75C11.8495 9.875 11.9448 9.91451 12.0152 9.98483C12.0855 10.0552 12.125 10.1505 12.125 10.25V10.625Z" fill="white"/>
+                                <path d="M8.75 12.875C9.16421 12.875 9.5 12.5392 9.5 12.125C9.5 11.7108 9.16421 11.375 8.75 11.375C8.33579 11.375 8 11.7108 8 12.125C8 12.5392 8.33579 12.875 8.75 12.875Z" fill="white"/>
+                                <path d="M10.25 12.875C10.6642 12.875 11 12.5392 11 12.125C11 11.7108 10.6642 11.375 10.25 11.375C9.83579 11.375 9.5 11.7108 9.5 12.125C9.5 12.5392 9.83579 12.875 10.25 12.875Z" fill="white"/>
+                                <path d="M11.75 12.875C12.1642 12.875 12.5 12.5392 12.5 12.125C12.5 11.7108 12.1642 11.375 11.75 11.375C11.3358 11.375 11 11.7108 11 12.125C11 12.5392 11.3358 12.875 11.75 12.875Z" fill="white"/>
+                                <path d="M13.25 12.875C13.6642 12.875 14 12.5392 14 12.125C14 11.7108 13.6642 11.375 13.25 11.375C12.8358 11.375 12.5 11.7108 12.5 12.125C12.5 12.5392 12.8358 12.875 13.25 12.875Z" fill="white"/>
+                                <path d="M8 14.375C8.41421 14.375 8.75 14.0392 8.75 13.625C8.75 13.2108 8.41421 12.875 8 12.875C7.58579 12.875 7.25 13.2108 7.25 13.625C7.25 14.0392 7.58579 14.375 8 14.375Z" fill="white"/>
+                                <path d="M9.5 14.375C9.91421 14.375 10.25 14.0392 10.25 13.625C10.25 13.2108 9.91421 12.875 9.5 12.875C9.08579 12.875 8.75 13.2108 8.75 13.625C8.75 14.0392 9.08579 14.375 9.5 14.375Z" fill="white"/>
+                                <path d="M11 14.375C11.4142 14.375 11.75 14.0392 11.75 13.625C11.75 13.2108 11.4142 12.875 11 12.875C10.5858 12.875 10.25 13.2108 10.25 13.625C10.25 14.0392 10.5858 14.375 11 14.375Z" fill="white"/>
+                                <path d="M12.5 14.375C12.9142 14.375 13.25 14.0392 13.25 13.625C13.25 13.2108 12.9142 12.875 12.5 12.875C12.0858 12.875 11.75 13.2108 11.75 13.625C11.75 14.0392 12.0858 14.375 12.5 14.375Z" fill="white"/>
+                                <path d="M14 14.375C14.4142 14.375 14.75 14.0392 14.75 13.625C14.75 13.2108 14.4142 12.875 14 12.875C13.5858 12.875 13.25 13.2108 13.25 13.625C13.25 14.0392 13.5858 14.375 14 14.375Z" fill="white"/>
+                                <path d="M16.625 9.875V15.875H5.375V9.875H6.125V14.75C6.125 14.8495 6.16451 14.9448 6.23483 15.0152C6.30516 15.0855 6.40054 15.125 6.5 15.125H15.5C15.5995 15.125 15.6948 15.0855 15.7652 15.0152C15.8355 14.9448 15.875 14.8495 15.875 14.75V9.875H16.625Z" fill="white"/>
+                                <path d="M19.625 6.5V15.875H18.875V6.875C18.8744 6.67627 18.7952 6.48585 18.6547 6.34533C18.5142 6.2048 18.3237 6.12559 18.125 6.125H12.875V5.375H18.5C18.7981 5.37589 19.0837 5.4947 19.2945 5.70549C19.5053 5.91627 19.6241 6.20191 19.625 6.5Z" fill="white"/>
+                                <path d="M20.75 16.625H1.25C1.04289 16.625 0.875 16.7929 0.875 17V20.75C0.875 20.9571 1.04289 21.125 1.25 21.125H20.75C20.9571 21.125 21.125 20.9571 21.125 20.75V17C21.125 16.7929 20.9571 16.625 20.75 16.625Z" fill="white"/>
+                                <path d="M8 12.875C7.85166 12.875 7.70666 12.919 7.58332 13.0014C7.45999 13.0838 7.36386 13.2009 7.30709 13.338C7.25032 13.475 7.23547 13.6258 7.26441 13.7713C7.29335 13.9168 7.36478 14.0504 7.46967 14.1553C7.57456 14.2602 7.7082 14.3317 7.85368 14.3606C7.99917 14.3895 8.14997 14.3747 8.28701 14.3179C8.42406 14.2611 8.54119 14.165 8.6236 14.0417C8.70601 13.9183 8.75 13.7733 8.75 13.625C8.74941 13.4263 8.6702 13.2358 8.52968 13.0953C8.38915 12.9548 8.19873 12.8756 8 12.875ZM8.75 11.375C8.60166 11.375 8.45666 11.419 8.33332 11.5014C8.20999 11.5838 8.11386 11.7009 8.05709 11.838C8.00032 11.975 7.98547 12.1258 8.01441 12.2713C8.04335 12.4168 8.11478 12.5504 8.21967 12.6553C8.32456 12.7602 8.4582 12.8317 8.60368 12.8606C8.74917 12.8895 8.89997 12.8747 9.03701 12.8179C9.17406 12.7611 9.29119 12.665 9.3736 12.5417C9.45601 12.4183 9.5 12.2733 9.5 12.125C9.49941 11.9263 9.4202 11.7358 9.27968 11.5953C9.13915 11.4548 8.94873 11.3756 8.75 11.375Z" fill="white"/>
+                                <path d="M10.25 11.375C10.1017 11.375 9.95666 11.419 9.83332 11.5014C9.70999 11.5838 9.61386 11.7009 9.55709 11.838C9.50032 11.975 9.48547 12.1258 9.51441 12.2713C9.54335 12.4168 9.61478 12.5504 9.71967 12.6553C9.82456 12.7602 9.9582 12.8317 10.1037 12.8606C10.2492 12.8895 10.4 12.8747 10.537 12.8179C10.6741 12.7611 10.7912 12.665 10.8736 12.5417C10.956 12.4183 11 12.2733 11 12.125C10.9994 11.9263 10.9202 11.7358 10.7797 11.5953C10.6392 11.4548 10.4487 11.3756 10.25 11.375Z" fill="white"/>
+                                <path d="M11.75 11.375C11.6017 11.375 11.4567 11.419 11.3333 11.5014C11.21 11.5838 11.1139 11.7009 11.0571 11.838C11.0003 11.975 10.9855 12.1258 11.0144 12.2713C11.0434 12.4168 11.1148 12.5504 11.2197 12.6553C11.3246 12.7602 11.4582 12.8317 11.6037 12.8606C11.7492 12.8895 11.9 12.8747 12.037 12.8179C12.1741 12.7611 12.2912 12.665 12.3736 12.5417C12.456 12.4183 12.5 12.2733 12.5 12.125C12.4994 11.9263 12.4202 11.7358 12.2797 11.5953C12.1392 11.4548 11.9487 11.3756 11.75 11.375Z" fill="white"/>
+                                <path d="M13.25 11.375C13.1017 11.375 12.9567 11.419 12.8333 11.5014C12.71 11.5838 12.6139 11.7009 12.5571 11.838C12.5003 11.975 12.4855 12.1258 12.5144 12.2713C12.5434 12.4168 12.6148 12.5504 12.7197 12.6553C12.8246 12.7602 12.9582 12.8317 13.1037 12.8606C13.2492 12.8895 13.4 12.8747 13.537 12.8179C13.6741 12.7611 13.7912 12.665 13.8736 12.5417C13.956 12.4183 14 12.2733 14 12.125C13.9994 11.9263 13.9202 11.7358 13.7797 11.5953C13.6392 11.4548 13.4487 11.3756 13.25 11.375ZM9.5 12.875C9.35166 12.875 9.20666 12.919 9.08332 13.0014C8.95999 13.0838 8.86386 13.2009 8.80709 13.338C8.75032 13.475 8.73547 13.6258 8.76441 13.7713C8.79335 13.9168 8.86478 14.0504 8.96967 14.1553C9.07456 14.2602 9.2082 14.3317 9.35368 14.3606C9.49917 14.3895 9.64997 14.3747 9.78701 14.3179C9.92406 14.2611 10.0412 14.165 10.1236 14.0417C10.206 13.9183 10.25 13.7733 10.25 13.625C10.2494 13.4263 10.1702 13.2358 10.0297 13.0953C9.88915 12.9548 9.69873 12.8756 9.5 12.875Z" fill="white"/>
+                                <path d="M11 12.875C10.8517 12.875 10.7067 12.919 10.5833 13.0014C10.46 13.0838 10.3639 13.2009 10.3071 13.338C10.2503 13.475 10.2355 13.6258 10.2644 13.7713C10.2934 13.9168 10.3648 14.0504 10.4697 14.1553C10.5746 14.2602 10.7082 14.3317 10.8537 14.3606C10.9992 14.3895 11.15 14.3747 11.287 14.3179C11.4241 14.2611 11.5412 14.165 11.6236 14.0417C11.706 13.9183 11.75 13.7733 11.75 13.625C11.7494 13.4263 11.6702 13.2358 11.5297 13.0953C11.3892 12.9548 11.1987 12.8756 11 12.875Z" fill="white"/>
+                                <path d="M12.5 12.875C12.3517 12.875 12.2067 12.919 12.0833 13.0014C11.96 13.0838 11.8639 13.2009 11.8071 13.338C11.7503 13.475 11.7355 13.6258 11.7644 13.7713C11.7934 13.9168 11.8648 14.0504 11.9697 14.1553C12.0746 14.2602 12.2082 14.3317 12.3537 14.3606C12.4992 14.3895 12.65 14.3747 12.787 14.3179C12.9241 14.2611 13.0412 14.165 13.1236 14.0417C13.206 13.9183 13.25 13.7733 13.25 13.625C13.2494 13.4263 13.1702 13.2358 13.0297 13.0953C12.8892 12.9548 12.6987 12.8756 12.5 12.875Z" fill="white"/>
+                                <path d="M14 12.875C13.8517 12.875 13.7067 12.919 13.5833 13.0014C13.46 13.0838 13.3639 13.2009 13.3071 13.338C13.2503 13.475 13.2355 13.6258 13.2644 13.7713C13.2934 13.9168 13.3648 14.0504 13.4697 14.1553C13.5746 14.2602 13.7082 14.3317 13.8537 14.3606C13.9992 14.3895 14.15 14.3747 14.287 14.3179C14.4241 14.2611 14.5412 14.165 14.6236 14.0417C14.706 13.9183 14.75 13.7733 14.75 13.625C14.7494 13.4263 14.6702 13.2358 14.5297 13.0953C14.3892 12.9548 14.1987 12.8756 14 12.875Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <p class="laboratory-item__text">испытания грунтов;</p>
+                    </div>
+                    <div class="laboratory-item d-flex align-items-start">
+                        <div class="circle">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.41455 0.0273445C9.14361 0.0271171 8.87531 0.080453 8.62506 0.184281C8.37481 0.288109 8.14755 0.440385 7.95636 0.632348L6.01141 2.57727C5.97566 2.61371 5.95229 2.65702 5.91929 2.69552H12.9352L10.8727 0.633019C10.6816 0.440932 10.4544 0.288564 10.2041 0.184617C9.95387 0.0806697 9.68553 0.0272073 9.41455 0.0273445ZM0.702548 1.31985C0.243986 1.34322 0.27766 2.03004 0.736222 2.00735H2.52578L4.52916 11.3601C4.54542 11.4374 4.5878 11.5067 4.64915 11.5564C4.7105 11.6061 4.78709 11.6331 4.86605 11.633H5.46278L3.82997 18.5149L3.84854 18.4599C3.84854 18.4599 3.79766 18.5864 3.77704 18.7562C3.74439 19.0257 3.79139 19.2989 3.91222 19.542C4.03305 19.7852 4.22243 19.9876 4.45698 20.1244C4.94442 20.4083 5.53842 20.3581 5.96742 20.0398C6.10492 19.938 6.20666 19.8343 6.20666 19.8343C6.22207 19.8182 6.23588 19.8007 6.24791 19.782L11.5816 11.633H13.0019L15.2528 15.6824C14.9705 15.9075 14.7424 16.1934 14.5855 16.5186C14.4287 16.8439 14.347 17.2003 14.3467 17.5614C14.3467 18.1995 14.6002 18.8116 15.0514 19.2628C15.5027 19.7141 16.1147 19.9676 16.7529 19.9676C17.3911 19.9676 18.0031 19.7141 18.4544 19.2628C18.9056 18.8116 19.1592 18.1995 19.1592 17.5614C19.1592 16.9232 18.9056 16.3112 18.4544 15.8599C18.0031 15.4086 17.3911 15.1551 16.7529 15.1551C16.4417 15.1555 16.1335 15.2162 15.8454 15.3339L13.7891 11.633H17.241C17.3215 11.6327 17.3992 11.6041 17.4608 11.5524C17.5223 11.5006 17.5638 11.4289 17.5779 11.3498L18.9529 3.78728C18.9617 3.73792 18.9597 3.6872 18.9468 3.63873C18.934 3.59027 18.9107 3.54524 18.8786 3.50672C18.8465 3.4682 18.8064 3.4372 18.761 3.41583C18.7157 3.39447 18.6662 3.38324 18.616 3.38302H3.52336L3.13972 1.5921C3.12321 1.5152 3.08083 1.44631 3.01965 1.39689C2.95847 1.34747 2.8822 1.3205 2.80355 1.32052H0.701856L0.702548 1.31985ZM6.17024 11.6323H10.76L5.69655 19.3702C5.68212 19.3839 5.63329 19.4321 5.55766 19.4877C5.44982 19.5685 5.32053 19.6157 5.18598 19.6233C5.05144 19.6309 4.91767 19.5985 4.80143 19.5304C4.6832 19.4615 4.58778 19.3595 4.52704 19.2369C4.4663 19.1143 4.4429 18.9765 4.45973 18.8408C4.47142 18.7404 4.48036 18.7308 4.48036 18.7308C4.48796 18.7123 4.49394 18.6932 4.49823 18.6737L6.17024 11.6337V11.6323ZM16.7529 16.5301C17.0264 16.5301 17.2887 16.6388 17.4821 16.8322C17.6755 17.0256 17.7842 17.2879 17.7842 17.5614C17.7842 17.8349 17.6755 18.0972 17.4821 18.2906C17.2887 18.484 17.0264 18.5926 16.7529 18.5926C16.4794 18.5926 16.2171 18.484 16.0237 18.2906C15.8303 18.0972 15.7217 17.8349 15.7217 17.5614C15.7221 17.3304 15.8 17.1061 15.943 16.9247L16.3109 17.5881C16.3328 17.6276 16.3624 17.6624 16.3978 17.6905C16.4332 17.7186 16.4739 17.7394 16.5173 17.7518C16.5608 17.7642 16.6063 17.7679 16.6512 17.7627C16.6961 17.7575 16.7395 17.7436 16.779 17.7216C16.8185 17.6996 16.8533 17.67 16.8814 17.6345C16.9095 17.5991 16.9303 17.5585 16.9427 17.515C16.9551 17.4716 16.9588 17.4261 16.9536 17.3812C16.9484 17.3363 16.9344 17.2929 16.9124 17.2534L16.5253 16.5569C16.5997 16.5393 16.6758 16.5302 16.7522 16.5294L16.7529 16.5301Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <p class="laboratory-item__text">определение плотности бетонов;</p>
+                    </div>
+                    <div class="laboratory-item d-flex align-items-start">
+                        <div class="circle">
+                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.285 1.76125C18.1697 1.42941 17.9539 1.14171 17.6676 0.938093C17.3814 0.734476 17.0388 0.625047 16.6875 0.625H4.3125C3.57562 0.625 2.94562 1.0975 2.715 1.76125L0.375 8.5V17.5C0.375 18.1187 0.88125 18.625 1.5 18.625H2.625C2.92337 18.625 3.20952 18.5065 3.4205 18.2955C3.63147 18.0845 3.75 17.7984 3.75 17.5V16.375H17.25V17.5C17.25 18.1187 17.7563 18.625 18.375 18.625H19.5C19.7984 18.625 20.0845 18.5065 20.2955 18.2955C20.5065 18.0845 20.625 17.7984 20.625 17.5V8.5L18.285 1.76125ZM4.3125 13C3.37875 13 2.625 12.2463 2.625 11.3125C2.625 10.3787 3.37875 9.625 4.3125 9.625C5.24625 9.625 6 10.3787 6 11.3125C6 12.2463 5.24625 13 4.3125 13ZM16.6875 13C15.7537 13 15 12.2463 15 11.3125C15 10.3787 15.7537 9.625 16.6875 9.625C17.6213 9.625 18.375 10.3787 18.375 11.3125C18.375 12.2463 17.6213 13 16.6875 13ZM2.625 7.375L4.3125 2.3125H16.6875L18.375 7.375H2.625Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <p class="laboratory-item__text">все виды дорожных испытаний по асфальту.</p>
+                    </div>
+                    <div class="laboratory-item d-flex align-items-start">
+                        <div class="circle">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_260_17866)">
+                                <path d="M18.6875 12.9375C18.6875 6.46875 11.5 1.4375 11.5 1.4375C11.5 1.4375 4.3125 6.46875 4.3125 12.9375C4.3125 14.8437 5.06975 16.6719 6.41767 18.0198C7.76559 19.3677 9.59376 20.125 11.5 20.125C13.4062 20.125 15.2344 19.3677 16.5823 18.0198C17.9302 16.6719 18.6875 14.8437 18.6875 12.9375Z" stroke="white" stroke-width="2.8125" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5 20.125C12.4439 20.125 13.3785 19.9391 14.2505 19.5779C15.1226 19.2167 15.9149 18.6873 16.5823 18.0198C17.2498 17.3524 17.7792 16.5601 18.1404 15.688C18.5016 14.816 18.6875 13.8814 18.6875 12.9375C18.6875 6.46875 11.5 1.4375 11.5 1.4375V20.125Z" fill="white"/>
+                                <path d="M11.5 20.125V1.4375" stroke="white" stroke-width="2.8125" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_260_17866">
+                                <rect width="23" height="23" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="laboratory-item__text">испытания бетона на прочность при пропаривании;</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="lab-info">
+                        <p class="lab-info__title">Оснащение лаборатории:</p>
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div class="lab-info-list">
+                                <div class="circle">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <p class="lab-info-list__text">сита для рассева сыпучих материалов</p>
+                            </div>
+                            <div class="lab-info-list">
+                                <div class="circle">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <p class="lab-info-list__text">камера тепла/холода</p>
+                            </div>
+                            <div class="lab-info-list">
+                                <div class="circle">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <p class="lab-info-list__text">стенд на водонепроницаемость</p>
+                            </div>
+                            <div class="lab-info-list">
+                                <div class="circle">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <p class="lab-info-list__text">смеситель для бетона</p>
+                            </div>
+                            <div class="lab-info-list">
+                                <div class="circle">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <p class="lab-info-list__text">камера нормального твердения образцов</p>
+                            </div>
+                            <div class="lab-info-list">
+                                <div class="circle">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <p class="lab-info-list__text">стенд для испытания плотности грунтов и определения коэффициента уплотнения</p>
+                            </div>
+                            <div class="lab-info-list">
+                                <div class="circle">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <p class="lab-info-list__text">пропарочная камера</p>
+                            </div>
+                            <div class="lab-info-list">
+                                <div class="circle">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <p class="lab-info-list__text">мелкие измерительные средства <span>(линейки, термометры, конуса для определения подвижности).</span></p>
+                            </div>
+                            <div class="lab-info-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Уникальное предложение  для собственников заводов -->
+    <div class="offer">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="title__text">Уникальное предложение  для собственников заводов</p>
+                    <p class="title__text-sub">Обучим штатного технолога высокоэффективным приемам</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center offer__img">
+                        <img src="./assets/imgs/png/offer.png" alt="" class="">
+                    </div>
+                    <div class="offer-item d-sm-flex justify-content-between flex-wrap d-none">
+                        <div class="offer-list wow fadeInUp" data-wow-delay="">
+                            <div class="circle">
+                                <div class="check">
+                                    <svg width="18" height="17" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="offer-list__text">быстрым методам входного контроля инертных материалов: щебень, песок, отсев</p>
+                        </div>
+                        <div class="offer-list wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="circle">
+                                <div class="check">
+                                    <svg width="18" height="17" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="offer-list__text">обыстрым методам определения «плотности упаковки» инертных материалов в бетоне с правильным соотношением Щ/П</p>
+                        </div>
+                        <div class="offer-list wow fadeInUp" data-wow-delay="1s">
+                            <div class="circle">
+                                <div class="check">
+                                    <svg width="18" height="17" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="offer-list__text">методам правильного подбора химии под нужный цемент <br> <span>(оценка пластификации)</span></p>
+                        </div>
+                        <div class="offer-list wow fadeInUp" data-wow-delay="1.5s">
+                            <div class="circle">
+                                <div class="check">
+                                    <svg width="18" height="17" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="offer-list__text">методам подбора правильного соотношения инертных материалов при полусухом вибропрессовании <br>
+                                <span>(с точным прогнозированием показателей по морозостойкости и прочности, что особенно важно в дорожном строительстве)</span></p>
+                        </div>
+                        <div class="offer-list wow fadeInUp" data-wow-delay="2s">
+                            <div class="circle">
+                                <div class="check">
+                                    <svg width="18" height="17" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="offer-list__text">разработки активной минеральной добавки на основе золы-уноса, микрокремнезема, каменной муки, кварцевого песка и цемента</p>
+                        </div>
+                        <div class="offer-list wow fadeInUp" data-wow-delay="2.5s">
+                            <div class="circle">
+                                <div class="check">
+                                    <svg width="18" height="17" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="offer-list__text">разработки самоуплотняющегося, гидротехнического бетонов на местных материалах в регионе</p>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-info-box position-relative d-sm-none">
+                        <div class="offer-filter-btns d-flex position-absolute">
+                            <label for="rad7" class="offer__lab" data-radio="filter_1">
+                                <input type="radio" id="rad7" name="checkList-offer" class="offer__rad d-none" checked>
+                                <div class="offer__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label for="rad8" class="offer__lab" data-radio="filter_2">
+                                <input type="radio" id="rad8" name="checkList-offer" class="offer__rad d-none">
+                                <div class="offer__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label for="rad9" class="offer__lab" data-radio="filter_3">
+                                <input type="radio" id="rad9" name="checkList-offer" class="offer__rad d-none">
+                                <div class="offer__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label for="rad10" class="offer__lab" data-radio="filter_4">
+                                <input type="radio" id="rad10" name="checkList-offer" class="offer__rad d-none">
+                                <div class="offer__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label for="rad11" class="offer__lab" data-radio="filter_5">
+                                <input type="radio" id="rad11" name="checkList-offer" class="offer__rad d-none">
+                                <div class="offer__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label for="rad12" class="offer__lab" data-radio="filter_6">
+                                <input type="radio" id="rad12" name="checkList-offer" class="offer__rad d-none">
+                                <div class="offer__check d-flex justify-content-center align-items-center">
+                                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.76056 6.81451C3.3839 7.19117 2.77275 7.19117 2.39627 6.81451L0.282492 4.70068C-0.0941639 4.3242 -0.0941639 3.71303 0.282492 3.33655C0.658966 2.95988 1.27012 2.95988 1.64678 3.33655L2.90617 4.59579C3.00125 4.69068 3.15558 4.69068 3.25084 4.59579L6.66091 1.18564C7.03739 0.808971 7.64854 0.808971 8.0252 1.18564C8.20608 1.36651 8.30769 1.61193 8.30769 1.8677C8.30769 2.12348 8.20608 2.36889 8.0252 2.54977L3.76056 6.81451Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="offer-info d-flex justify-content-center align-items-center text-center">
+                            <div class="offer-info__text filter_1">быстрым методам входного контроля инертных материалов: щебень, песок, отсев</div>
+                            <div class="offer-info__text filter_2">обыстрым методам определения «плотности упаковки» инертных материалов в бетоне с правильным соотношением Щ/П</div>
+                            <div class="offer-info__text filter_3">методам правильного подбора химии под нужный цемент <br> <span>(оценка пластификации)</span></div>
+                            <div class="offer-info__text filter_4">методам подбора правильного соотношения инертных материалов при полусухом вибропрессовании <br>
+                                <span>(с точным прогнозированием показателей по морозостойкости и прочности, что особенно важно в дорожном строительстве)</span></div>
+                            <div class="offer-info__text filter_5">разработки активной минеральной добавки на основе золы-уноса, микрокремнезема, каменной муки, кварцевого песка и цемента</div>
+                            <div class="offer-info__text filter_6">разработки самоуплотняющегося, гидротехнического бетонов на местных материалах в регионе</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Удаленная техническая поддержка -->
+    <div class="tech-support">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="title__text">Удаленная техническая поддержка</p>
+                    <p class="title__text-sub">Поможет быстро 24/7</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-5">
+                        <img src="./assets/imgs/png/support.png" alt="" class="">
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="tech-support-list">
+                            <div class="circle">
+                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.28571 17.1429C4.28571 16.7485 4.14621 16.4118 3.86719 16.1328C3.58817 15.8538 3.25149 15.7143 2.85714 15.7143C2.4628 15.7143 2.12612 15.8538 1.8471 16.1328C1.56808 16.4118 1.42857 16.7485 1.42857 17.1429C1.42857 17.5372 1.56808 17.8739 1.8471 18.1529C2.12612 18.4319 2.4628 18.5714 2.85714 18.5714C3.25149 18.5714 3.58817 18.4319 3.86719 18.1529C4.14621 17.8739 4.28571 17.5372 4.28571 17.1429ZM8.57143 17.1429C8.57143 16.7485 8.43192 16.4118 8.1529 16.1328C7.87388 15.8538 7.5372 15.7143 7.14286 15.7143C6.74851 15.7143 6.41183 15.8538 6.13281 16.1328C5.85379 16.4118 5.71429 16.7485 5.71429 17.1429C5.71429 17.5372 5.85379 17.8739 6.13281 18.1529C6.41183 18.4319 6.74851 18.5714 7.14286 18.5714C7.5372 18.5714 7.87388 18.4319 8.1529 18.1529C8.43192 17.8739 8.57143 17.5372 8.57143 17.1429ZM4.28571 12.8571C4.28571 12.4628 4.14621 12.1261 3.86719 11.8471C3.58817 11.5681 3.25149 11.4286 2.85714 11.4286C2.4628 11.4286 2.12612 11.5681 1.8471 11.8471C1.56808 12.1261 1.42857 12.4628 1.42857 12.8571C1.42857 13.2515 1.56808 13.5882 1.8471 13.8672C2.12612 14.1462 2.4628 14.2857 2.85714 14.2857C3.25149 14.2857 3.58817 14.1462 3.86719 13.8672C4.14621 13.5882 4.28571 13.2515 4.28571 12.8571ZM12.8571 17.1429C12.8571 16.7485 12.7176 16.4118 12.4386 16.1328C12.1596 15.8538 11.8229 15.7143 11.4286 15.7143C11.0342 15.7143 10.6975 15.8538 10.4185 16.1328C10.1395 16.4118 10 16.7485 10 17.1429C10 17.5372 10.1395 17.8739 10.4185 18.1529C10.6975 18.4319 11.0342 18.5714 11.4286 18.5714C11.8229 18.5714 12.1596 18.4319 12.4386 18.1529C12.7176 17.8739 12.8571 17.5372 12.8571 17.1429ZM8.57143 12.8571C8.57143 12.4628 8.43192 12.1261 8.1529 11.8471C7.87388 11.5681 7.5372 11.4286 7.14286 11.4286C6.74851 11.4286 6.41183 11.5681 6.13281 11.8471C5.85379 12.1261 5.71429 12.4628 5.71429 12.8571C5.71429 13.2515 5.85379 13.5882 6.13281 13.8672C6.41183 14.1462 6.74851 14.2857 7.14286 14.2857C7.5372 14.2857 7.87388 14.1462 8.1529 13.8672C8.43192 13.5882 8.57143 13.2515 8.57143 12.8571ZM4.28571 8.57143C4.28571 8.17708 4.14621 7.8404 3.86719 7.56138C3.58817 7.28237 3.25149 7.14286 2.85714 7.14286C2.4628 7.14286 2.12612 7.28237 1.8471 7.56138C1.56808 7.8404 1.42857 8.17708 1.42857 8.57143C1.42857 8.96577 1.56808 9.30246 1.8471 9.58147C2.12612 9.86049 2.4628 10 2.85714 10C3.25149 10 3.58817 9.86049 3.86719 9.58147C4.14621 9.30246 4.28571 8.96577 4.28571 8.57143ZM12.8571 12.8571C12.8571 12.4628 12.7176 12.1261 12.4386 11.8471C12.1596 11.5681 11.8229 11.4286 11.4286 11.4286C11.0342 11.4286 10.6975 11.5681 10.4185 11.8471C10.1395 12.1261 10 12.4628 10 12.8571C10 13.2515 10.1395 13.5882 10.4185 13.8672C10.6975 14.1462 11.0342 14.2857 11.4286 14.2857C11.8229 14.2857 12.1596 14.1462 12.4386 13.8672C12.7176 13.5882 12.8571 13.2515 12.8571 12.8571ZM8.57143 8.57143C8.57143 8.17708 8.43192 7.8404 8.1529 7.56138C7.87388 7.28237 7.5372 7.14286 7.14286 7.14286C6.74851 7.14286 6.41183 7.28237 6.13281 7.56138C5.85379 7.8404 5.71429 8.17708 5.71429 8.57143C5.71429 8.96577 5.85379 9.30246 6.13281 9.58147C6.41183 9.86049 6.74851 10 7.14286 10C7.5372 10 7.87388 9.86049 8.1529 9.58147C8.43192 9.30246 8.57143 8.96577 8.57143 8.57143ZM17.1429 17.1429V12.8571C17.1429 12.4702 17.0015 12.1354 16.7188 11.8527C16.436 11.5699 16.1012 11.4286 15.7143 11.4286C15.3274 11.4286 14.9926 11.5699 14.7098 11.8527C14.4271 12.1354 14.2857 12.4702 14.2857 12.8571V17.1429C14.2857 17.5298 14.4271 17.8646 14.7098 18.1473C14.9926 18.4301 15.3274 18.5714 15.7143 18.5714C16.1012 18.5714 16.436 18.4301 16.7188 18.1473C17.0015 17.8646 17.1429 17.5298 17.1429 17.1429ZM12.8571 8.57143C12.8571 8.17708 12.7176 7.8404 12.4386 7.56138C12.1596 7.28237 11.8229 7.14286 11.4286 7.14286C11.0342 7.14286 10.6975 7.28237 10.4185 7.56138C10.1395 7.8404 10 8.17708 10 8.57143C10 8.96577 10.1395 9.30246 10.4185 9.58147C10.6975 9.86049 11.0342 10 11.4286 10C11.8229 10 12.1596 9.86049 12.4386 9.58147C12.7176 9.30246 12.8571 8.96577 12.8571 8.57143ZM17.1429 5V2.14286C17.1429 1.9494 17.0722 1.78199 16.9308 1.64062C16.7894 1.49926 16.622 1.42857 16.4286 1.42857H2.14286C1.9494 1.42857 1.78199 1.49926 1.64062 1.64062C1.49926 1.78199 1.42857 1.9494 1.42857 2.14286V5C1.42857 5.19345 1.49926 5.36086 1.64062 5.50223C1.78199 5.6436 1.9494 5.71429 2.14286 5.71429H16.4286C16.622 5.71429 16.7894 5.6436 16.9308 5.50223C17.0722 5.36086 17.1429 5.19345 17.1429 5ZM17.1429 8.57143C17.1429 8.17708 17.0033 7.8404 16.7243 7.56138C16.4453 7.28237 16.1086 7.14286 15.7143 7.14286C15.3199 7.14286 14.9833 7.28237 14.7042 7.56138C14.4252 7.8404 14.2857 8.17708 14.2857 8.57143C14.2857 8.96577 14.4252 9.30246 14.7042 9.58147C14.9833 9.86049 15.3199 10 15.7143 10C16.1086 10 16.4453 9.86049 16.7243 9.58147C17.0033 9.30246 17.1429 8.96577 17.1429 8.57143ZM18.5714 1.42857V18.5714C18.5714 18.9583 18.4301 19.2932 18.1473 19.5759C17.8646 19.8586 17.5298 20 17.1429 20H1.42857C1.04167 20 0.706845 19.8586 0.424107 19.5759C0.141369 19.2932 0 18.9583 0 18.5714V1.42857C0 1.04167 0.141369 0.706845 0.424107 0.424107C0.706845 0.141369 1.04167 0 1.42857 0H17.1429C17.5298 0 17.8646 0.141369 18.1473 0.424107C18.4301 0.706845 18.5714 1.04167 18.5714 1.42857Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <p class="tech-support-list__text">Сделать расчет состава бетона при изменении поставляемых материалов: щебень, песок, отсев</p>
+                        </div>
+                        <div class="tech-support-list">
+                            <div class="circle">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.7722 20.6105L20.7471 20.5782L13.2972 11.7303V8.26597C13.5529 8.26322 13.7998 8.17233 13.9962 8.00865C14.1926 7.84496 14.3266 7.61851 14.3754 7.36753C14.4017 7.21167 14.3935 7.05193 14.3513 6.89961C14.309 6.74729 14.2338 6.60612 14.1309 6.4861C14.028 6.36609 13.9 6.27016 13.756 6.20512C13.6119 6.14007 13.4553 6.1075 13.2972 6.10972H9.74303C9.48059 6.1032 9.22434 6.18987 9.01974 6.35435C8.81513 6.51882 8.67541 6.75046 8.62537 7.00815C8.59901 7.16401 8.60724 7.32376 8.64949 7.47608C8.69173 7.6284 8.76695 7.76957 8.86982 7.88958C8.97269 8.0096 9.1007 8.10552 9.24476 8.17057C9.38883 8.23561 9.54544 8.26818 9.7035 8.26597V11.7303L2.25365 20.5782L2.2285 20.6105C2.12138 20.7732 2.06032 20.9618 2.05181 21.1564C2.0433 21.3509 2.08766 21.5442 2.18017 21.7156C2.27269 21.887 2.4099 22.0301 2.57723 22.1298C2.74456 22.2294 2.93576 22.2819 3.13053 22.2816H19.8702C20.065 22.2819 20.2562 22.2294 20.4235 22.1298C20.5908 22.0301 20.7281 21.887 20.8206 21.7156C20.9131 21.5442 20.9574 21.3509 20.9489 21.1564C20.9404 20.9618 20.8794 20.7732 20.7722 20.6105ZM9.16443 19.0472C8.91566 19.0472 8.67248 18.9734 8.46563 18.8352C8.25878 18.697 8.09757 18.5006 8.00237 18.2708C7.90716 18.0409 7.88226 17.788 7.93079 17.544C7.97932 17.3 8.09912 17.0759 8.27502 16.9C8.45093 16.7241 8.67505 16.6043 8.91905 16.5558C9.16304 16.5072 9.41594 16.5321 9.64578 16.6273C9.87561 16.7225 10.0721 16.8838 10.2103 17.0906C10.3485 17.2974 10.4222 17.5406 10.4222 17.7894C10.4222 18.123 10.2897 18.4429 10.0538 18.6788C9.81796 18.9147 9.49802 19.0472 9.16443 19.0472ZM13.0241 16.1722C12.4693 16.0103 11.9623 15.7155 11.5471 15.3133C11.0544 14.828 10.4293 14.4992 9.75021 14.3682C9.24819 14.3033 8.73793 14.36 8.2624 14.5335L10.3288 12.0789C10.3855 12.0196 10.4188 11.9417 10.4222 11.8597V7.90659C10.4222 7.81128 10.3844 7.71987 10.317 7.65248C10.2496 7.58508 10.1582 7.54722 10.0629 7.54722H9.7035C9.65159 7.54722 9.60029 7.53598 9.55314 7.51427C9.506 7.49255 9.46411 7.46088 9.43037 7.42144C9.39524 7.38102 9.36959 7.33326 9.35528 7.28165C9.34098 7.23004 9.3384 7.17589 9.34771 7.12315C9.36987 7.03618 9.42123 6.95945 9.49319 6.90581C9.56515 6.85217 9.65335 6.82487 9.74303 6.82847H13.2972C13.3492 6.82846 13.4004 6.83971 13.4476 6.86142C13.4947 6.88313 13.5366 6.9148 13.5704 6.95425C13.6055 6.99467 13.6312 7.04243 13.6455 7.09403C13.6598 7.14564 13.6623 7.19979 13.653 7.25253C13.6309 7.3395 13.5795 7.41623 13.5076 7.46987C13.4356 7.52351 13.3474 7.55082 13.2577 7.54722H12.9379C12.8426 7.54722 12.7511 7.58508 12.6838 7.65248C12.6164 7.71987 12.5785 7.81128 12.5785 7.90659V11.8597C12.5774 11.9445 12.6082 12.0266 12.6647 12.0897L15.6799 15.6835C14.6952 16.1974 13.804 16.3735 13.0241 16.1722ZM15.4535 20.4847C15.2403 20.4847 15.0318 20.4215 14.8545 20.303C14.6772 20.1846 14.539 20.0162 14.4574 19.8192C14.3758 19.6222 14.3545 19.4054 14.3961 19.1963C14.4377 18.9871 14.5404 18.795 14.6911 18.6442C14.8419 18.4935 15.034 18.3908 15.2432 18.3492C15.4523 18.3076 15.6691 18.3289 15.8661 18.4105C16.0631 18.4921 16.2315 18.6303 16.3499 18.8076C16.4684 18.9849 16.5316 19.1934 16.5316 19.4066C16.5316 19.6925 16.418 19.9668 16.2158 20.1689C16.0137 20.3711 15.7394 20.4847 15.4535 20.4847Z" fill="white"/>
+                                    <path d="M12.5781 5.39062C13.1736 5.39062 13.6562 4.90793 13.6562 4.3125C13.6562 3.71707 13.1736 3.23438 12.5781 3.23438C11.9827 3.23438 11.5 3.71707 11.5 4.3125C11.5 4.90793 11.9827 5.39062 12.5781 5.39062Z" fill="white"/>
+                                    <path d="M14.5547 3.23438C15.2494 3.23438 15.8125 2.67123 15.8125 1.97656C15.8125 1.28189 15.2494 0.71875 14.5547 0.71875C13.86 0.71875 13.2969 1.28189 13.2969 1.97656C13.2969 2.67123 13.86 3.23438 14.5547 3.23438Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <p class="tech-support-list__text">Подбор нового состава бетона <br> <span>(при условии, что заказчик направит к нам в лабораторию все необходимые материалы транспортной компанией)</span></p>
+                        </div>
+                        <div class="tech-support-list">
+                            <div class="circle">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.43754 9.28125C3.3757 9.28142 3.31496 9.2649 3.26173 9.23344C3.20849 9.20199 3.16472 9.15675 3.13504 9.1025L3.01129 8.87562L1.81848 10.0684C1.78626 10.1004 1.76069 10.1384 1.74323 10.1803C1.72578 10.2222 1.7168 10.2671 1.7168 10.3125C1.7168 10.3579 1.72578 10.4028 1.74323 10.4447C1.76069 10.4866 1.78626 10.5246 1.81848 10.5566C1.85043 10.5888 1.88845 10.6144 1.93034 10.6318C1.97223 10.6493 2.01716 10.6582 2.06254 10.6582C2.10792 10.6582 2.15285 10.6493 2.19474 10.6318C2.23663 10.6144 2.27465 10.5888 2.3066 10.5566L3.57848 9.28125H3.43754ZM9.8691 10.0684L8.67629 8.87562L8.55254 9.1025C8.52286 9.15675 8.47909 9.20199 8.42585 9.23344C8.37262 9.2649 8.31188 9.28142 8.25004 9.28125H8.1091L9.38098 10.5566C9.41293 10.5888 9.45095 10.6144 9.49284 10.6318C9.53473 10.6493 9.57966 10.6582 9.62504 10.6582C9.67042 10.6582 9.71535 10.6493 9.75724 10.6318C9.79913 10.6144 9.83715 10.5888 9.8691 10.5566C9.90132 10.5246 9.92689 10.4866 9.94435 10.4447C9.9618 10.4028 9.97078 10.3579 9.97078 10.3125C9.97078 10.2671 9.9618 10.2222 9.94435 10.1803C9.92689 10.1384 9.90132 10.1004 9.8691 10.0684ZM8.04723 1.71875H3.64035L1.76692 5.15625L3.64035 8.59375H8.04723L9.92066 5.15625L8.04723 1.71875ZM7.51098 8.08844C7.48711 8.12687 7.45588 8.16021 7.4191 8.18654C7.38232 8.21288 7.3407 8.2317 7.29663 8.24192C7.25255 8.25214 7.2069 8.25356 7.16228 8.2461C7.11766 8.23864 7.07495 8.22244 7.0366 8.19844C6.99817 8.17457 6.96483 8.14334 6.93849 8.10656C6.91216 8.06978 6.89334 8.02816 6.88312 7.98409C6.8729 7.94002 6.87148 7.89436 6.87894 7.84974C6.8864 7.80512 6.9026 7.76241 6.9266 7.72406L8.53191 5.15625L6.9266 2.58844C6.87828 2.51094 6.86273 2.41743 6.88336 2.32847C6.90399 2.23951 6.95911 2.16238 7.0366 2.11406C7.11409 2.06574 7.20761 2.05019 7.29657 2.07082C7.38553 2.09145 7.46266 2.14657 7.51098 2.22406L9.22973 4.97406C9.26387 5.0287 9.28198 5.09182 9.28198 5.15625C9.28198 5.22068 9.26387 5.2838 9.22973 5.33844L7.51098 8.08844ZM13.75 15.125H13.891L12.9629 16.0566C12.9309 16.0888 12.8929 16.1144 12.851 16.1318C12.8091 16.1493 12.7642 16.1582 12.7188 16.1582C12.6734 16.1582 12.6285 16.1493 12.5866 16.1318C12.5447 16.1144 12.5067 16.0888 12.4747 16.0566C12.4425 16.0246 12.4169 15.9866 12.3995 15.9447C12.382 15.9028 12.373 15.8579 12.373 15.8125C12.373 15.7671 12.382 15.7222 12.3995 15.6803C12.4169 15.6384 12.4425 15.6004 12.4747 15.5684L13.3238 14.7194L13.4475 14.9462C13.4772 15.0005 13.521 15.0457 13.5742 15.0772C13.6275 15.1087 13.6882 15.1252 13.75 15.125ZM12.131 6.08781C12.0989 6.05576 12.0735 6.01771 12.0562 5.97584C12.0388 5.93396 12.0299 5.88908 12.0299 5.84375C12.0299 5.79842 12.0388 5.75354 12.0562 5.71166C12.0735 5.66979 12.0989 5.63174 12.131 5.59969C12.163 5.56764 12.2011 5.54221 12.243 5.52487C12.2848 5.50752 12.3297 5.49859 12.375 5.49859C12.4204 5.49859 12.4652 5.50752 12.5071 5.52487C12.549 5.54221 12.5871 5.56764 12.6191 5.59969L13.891 6.875H13.75C13.6882 6.87483 13.6275 6.89135 13.5742 6.92281C13.521 6.95426 13.4772 6.9995 13.4475 7.05375L13.3238 7.28063L12.131 6.08781ZM18.3597 7.5625H13.9529L12.0794 11L13.9529 14.4375H18.3597L20.2332 11L18.3597 7.5625ZM17.8235 13.9322C17.7996 13.9706 17.7684 14.004 17.7316 14.0303C17.6948 14.0566 17.6532 14.0754 17.6091 14.0857C17.5651 14.0959 17.5194 14.0973 17.4748 14.0898C17.4302 14.0824 17.3875 14.0662 17.3491 14.0422C17.3107 14.0183 17.2773 13.9871 17.251 13.9503C17.2247 13.9135 17.2058 13.8719 17.1956 13.8278C17.1854 13.7838 17.184 13.7381 17.1914 13.6935C17.1989 13.6489 17.2151 13.6062 17.2391 13.5678L18.8444 11L17.2391 8.43219C17.1908 8.35469 17.1752 8.26118 17.1959 8.17222C17.2165 8.08326 17.2716 8.00613 17.3491 7.95781C17.4266 7.90949 17.5201 7.89394 17.6091 7.91457C17.698 7.9352 17.7752 7.99032 17.8235 8.06781L19.5422 10.8178C19.5764 10.8724 19.5945 10.9356 19.5945 11C19.5945 11.0644 19.5764 11.1276 19.5422 11.1822L17.8235 13.9322Z" fill="white"/>
+                                    <path d="M15.4688 3.09375C16.0383 3.09375 16.5 2.63204 16.5 2.0625C16.5 1.49296 16.0383 1.03125 15.4688 1.03125C14.8992 1.03125 14.4375 1.49296 14.4375 2.0625C14.4375 2.63204 14.8992 3.09375 15.4688 3.09375Z" fill="white"/>
+                                    <path d="M19.9375 5.5C20.507 5.5 20.9688 5.03829 20.9688 4.46875C20.9688 3.89921 20.507 3.4375 19.9375 3.4375C19.368 3.4375 18.9062 3.89921 18.9062 4.46875C18.9062 5.03829 19.368 5.5 19.9375 5.5Z" fill="white"/>
+                                    <path d="M17.1875 18.2188C17.757 18.2188 18.2188 17.757 18.2188 17.1875C18.2188 16.618 17.757 16.1562 17.1875 16.1562C16.618 16.1562 16.1562 16.618 16.1562 17.1875C16.1562 17.757 16.618 18.2188 17.1875 18.2188Z" fill="white"/>
+                                    <path d="M14.0938 20.9688C14.6633 20.9688 15.125 20.507 15.125 19.9375C15.125 19.368 14.6633 18.9062 14.0938 18.9062C13.5242 18.9062 13.0625 19.368 13.0625 19.9375C13.0625 20.507 13.5242 20.9688 14.0938 20.9688Z" fill="white"/>
+                                    <path d="M9.86879 11.4454C9.90101 11.4774 9.92658 11.5154 9.94403 11.5573C9.96148 11.5992 9.97047 11.6441 9.97047 11.6895C9.97047 11.7349 9.96148 11.7798 9.94403 11.8217C9.92658 11.8636 9.90101 11.9016 9.86879 11.9336L8.67598 13.1264L8.55223 12.8995C8.52254 12.8452 8.47878 12.8 8.42554 12.7685C8.3723 12.7371 8.31156 12.7206 8.24973 12.7207H8.10879L9.38066 11.4454C9.41262 11.4132 9.45064 11.3876 9.49253 11.3702C9.53442 11.3527 9.57935 11.3438 9.62473 11.3438C9.67011 11.3438 9.71504 11.3527 9.75693 11.3702C9.79881 11.3876 9.83683 11.4132 9.86879 11.4454ZM8.04691 13.4082H3.64004L1.7666 16.8457L3.64004 20.2832H8.04691L9.92035 16.8457L8.04691 13.4082ZM7.51066 19.7779C7.48679 19.8164 7.45557 19.8497 7.41879 19.876C7.382 19.9024 7.34038 19.9212 7.29631 19.9314C7.25224 19.9416 7.20659 19.9431 7.16197 19.9356C7.11735 19.9281 7.07464 19.9119 7.03629 19.8879C6.99786 19.8641 6.96452 19.8328 6.93818 19.7961C6.91184 19.7593 6.89303 19.7177 6.88281 19.6736C6.87259 19.6295 6.87117 19.5839 6.87863 19.5392C6.88609 19.4946 6.90229 19.4519 6.92629 19.4136L8.5316 16.8457L6.92629 14.2779C6.87797 14.2004 6.86241 14.1069 6.88304 14.018C6.90367 13.929 6.9588 13.8519 7.03629 13.8036C7.11378 13.7552 7.2073 13.7397 7.29626 13.7603C7.38522 13.7809 7.46235 13.8361 7.51066 13.9136L9.22941 16.6636C9.26356 16.7182 9.28167 16.7813 9.28167 16.8457C9.28167 16.9102 9.26356 16.9733 9.22941 17.0279L7.51066 19.7779ZM12.0997 16.8457L10.5391 17.1586L10.6147 17.0176C10.6449 16.9654 10.6608 16.9061 10.6608 16.8457C10.6608 16.7854 10.6449 16.7261 10.6147 16.6739L10.4944 16.4539L11.9622 16.1582C12.0534 16.14 12.1481 16.1587 12.2254 16.2103C12.3028 16.2619 12.3565 16.3421 12.3747 16.4332C12.393 16.5244 12.3742 16.6191 12.3227 16.6964C12.2711 16.7738 12.1909 16.8275 12.0997 16.8457Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <p class="tech-support-list__text">Изменение в составе бетона для улучшения качества поверхности изделий</p>
+                        </div>
+                        <div class="tech-support-list">
+                            <div class="circle">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.8126 5.3125C16.9168 5.41667 17.021 5.5506 17.1251 5.71429H11.8573V0.446429C12.021 0.550595 12.1549 0.654762 12.2591 0.758929L16.8126 5.3125ZM11.5001 7.14286H17.5716V18.9286C17.5716 19.2262 17.4674 19.4792 17.2591 19.6875C17.0507 19.8958 16.7978 20 16.5001 20H1.50014C1.20252 20 0.949544 19.8958 0.741211 19.6875C0.532878 19.4792 0.428711 19.2262 0.428711 18.9286V1.07143C0.428711 0.77381 0.532878 0.520833 0.741211 0.3125C0.949544 0.104167 1.20252 0 1.50014 0H10.4287V6.07143C10.4287 6.36905 10.5329 6.62202 10.7412 6.83036C10.9495 7.03869 11.2025 7.14286 11.5001 7.14286ZM13.2859 15.3571V14.6429C13.2859 14.5387 13.2524 14.4531 13.1854 14.3862C13.1184 14.3192 13.0329 14.2857 12.9287 14.2857H5.07157C4.9674 14.2857 4.88184 14.3192 4.81487 14.3862C4.74791 14.4531 4.71443 14.5387 4.71443 14.6429V15.3571C4.71443 15.4613 4.74791 15.5469 4.81487 15.6138C4.88184 15.6808 4.9674 15.7143 5.07157 15.7143H12.9287C13.0329 15.7143 13.1184 15.6808 13.1854 15.6138C13.2524 15.5469 13.2859 15.4613 13.2859 15.3571ZM13.2859 12.5V11.7857C13.2859 11.6815 13.2524 11.596 13.1854 11.529C13.1184 11.4621 13.0329 11.4286 12.9287 11.4286H5.07157C4.9674 11.4286 4.88184 11.4621 4.81487 11.529C4.74791 11.596 4.71443 11.6815 4.71443 11.7857V12.5C4.71443 12.6042 4.74791 12.6897 4.81487 12.7567C4.88184 12.8237 4.9674 12.8571 5.07157 12.8571H12.9287C13.0329 12.8571 13.1184 12.8237 13.1854 12.7567C13.2524 12.6897 13.2859 12.6042 13.2859 12.5ZM13.2859 9.64286V8.92857C13.2859 8.8244 13.2524 8.73884 13.1854 8.67188C13.1184 8.60491 13.0329 8.57143 12.9287 8.57143H5.07157C4.9674 8.57143 4.88184 8.60491 4.81487 8.67188C4.74791 8.73884 4.71443 8.8244 4.71443 8.92857V9.64286C4.71443 9.74702 4.74791 9.83259 4.81487 9.89955C4.88184 9.96652 4.9674 10 5.07157 10H12.9287C13.0329 10 13.1184 9.96652 13.1854 9.89955C13.2524 9.83259 13.2859 9.74702 13.2859 9.64286Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <p class="tech-support-list__text">Сертификация, декларирование, разработка ТУ</p>
+                        </div>
+                        <div class="tech-support-list">
+                            <div class="circle">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.2495 0.71875H8.62453C8.17966 0.72 7.74607 0.858819 7.3832 1.11617C7.02033 1.37353 6.74594 1.73682 6.59766 2.15625H14.3745C15.3277 2.15625 16.2417 2.53488 16.9157 3.20884C17.5897 3.88279 17.9683 4.79688 17.9683 5.75V19.2769C18.3877 19.1286 18.751 18.8542 19.0084 18.4913C19.2657 18.1285 19.4045 17.6949 19.4058 17.25V2.875C19.4058 2.30313 19.1786 1.75468 18.7742 1.3503C18.3699 0.945926 17.8214 0.71875 17.2495 0.71875Z" fill="white"/>
+                                    <path d="M14.375 3.59375H5.75C5.17813 3.59375 4.62968 3.82093 4.2253 4.2253C3.82093 4.62968 3.59375 5.17813 3.59375 5.75V20.125C3.59375 20.6969 3.82093 21.2453 4.2253 21.6497C4.62968 22.0541 5.17813 22.2812 5.75 22.2812H14.375C14.9469 22.2812 15.4953 22.0541 15.8997 21.6497C16.3041 21.2453 16.5312 20.6969 16.5312 20.125V5.75C16.5312 5.17813 16.3041 4.62968 15.8997 4.2253C15.4953 3.82093 14.9469 3.59375 14.375 3.59375ZM13.6562 19.4062H6.46875C6.27813 19.4062 6.09531 19.3305 5.96052 19.1957C5.82573 19.0609 5.75 18.8781 5.75 18.6875C5.75 18.4969 5.82573 18.3141 5.96052 18.1793C6.09531 18.0445 6.27813 17.9688 6.46875 17.9688H13.6562C13.8469 17.9688 14.0297 18.0445 14.1645 18.1793C14.2993 18.3141 14.375 18.4969 14.375 18.6875C14.375 18.8781 14.2993 19.0609 14.1645 19.1957C14.0297 19.3305 13.8469 19.4062 13.6562 19.4062ZM13.6562 16.5312H6.46875C6.27813 16.5312 6.09531 16.4555 5.96052 16.3207C5.82573 16.1859 5.75 16.0031 5.75 15.8125C5.75 15.6219 5.82573 15.4391 5.96052 15.3043C6.09531 15.1695 6.27813 15.0938 6.46875 15.0938H13.6562C13.8469 15.0938 14.0297 15.1695 14.1645 15.3043C14.2993 15.4391 14.375 15.6219 14.375 15.8125C14.375 16.0031 14.2993 16.1859 14.1645 16.3207C14.0297 16.4555 13.8469 16.5312 13.6562 16.5312ZM10.0625 14.375C9.20957 14.375 8.37579 14.1221 7.6666 13.6482C6.95742 13.1743 6.40467 12.5008 6.07827 11.7128C5.75187 10.9248 5.66647 10.0577 5.83286 9.22117C5.99926 8.38463 6.40999 7.61622 7.0131 7.0131C7.61622 6.40999 8.38463 5.99926 9.22117 5.83286C10.0577 5.66647 10.9248 5.75187 11.7128 6.07827C12.5008 6.40467 13.1743 6.95742 13.6482 7.6666C14.1221 8.37579 14.375 9.20957 14.375 10.0625C14.375 11.2062 13.9206 12.3031 13.1119 13.1119C12.3031 13.9206 11.2062 14.375 10.0625 14.375Z" fill="white"/>
+                                    <path d="M10.0625 7.1875C9.49388 7.1875 8.93803 7.35612 8.46524 7.67203C7.99245 7.98793 7.62395 8.43695 7.40635 8.96228C7.18875 9.48762 7.13181 10.0657 7.24274 10.6234C7.35368 11.1811 7.62749 11.6934 8.02957 12.0954C8.43165 12.4975 8.94392 12.7713 9.50162 12.8823C10.0593 12.9932 10.6374 12.9363 11.1627 12.7187C11.6881 12.5011 12.1371 12.1326 12.453 11.6598C12.7689 11.187 12.9375 10.6311 12.9375 10.0625C12.9375 9.3 12.6346 8.56873 12.0954 8.02957C11.5563 7.4904 10.825 7.1875 10.0625 7.1875ZM11.6366 9.86125L10.1488 11.2988C10.0155 11.4272 9.83787 11.4993 9.65281 11.5C9.46527 11.5011 9.28472 11.4289 9.14969 11.2988L8.48844 10.6519C8.41217 10.5889 8.34971 10.511 8.30496 10.4228C8.26021 10.3346 8.23414 10.2381 8.22837 10.1394C8.2226 10.0407 8.23726 9.94189 8.27143 9.8491C8.3056 9.75631 8.35855 9.67158 8.42696 9.60019C8.49538 9.5288 8.57779 9.47229 8.66904 9.4342C8.76028 9.39612 8.85841 9.37727 8.95728 9.37883C9.05614 9.3804 9.15362 9.40235 9.24362 9.44331C9.33362 9.48427 9.41419 9.54335 9.48031 9.61688L9.65281 9.78219L10.6447 8.82625C10.7846 8.7108 10.963 8.65252 11.1441 8.66311C11.3252 8.67369 11.4956 8.75236 11.6211 8.88332C11.7466 9.01429 11.8179 9.18787 11.8208 9.36925C11.8237 9.55062 11.7579 9.72637 11.6366 9.86125Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <p class="tech-support-list__text">Разработка регламентов 
+                                и инструкций</p>
+                        </div>
+                        <div class="tech-support-list">
+                            <div class="circle">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_260_18125)">
+                                    <path d="M19.7593 17.4988L17.8184 16.8942V16.1942C18.7729 15.3352 19.3775 13.7761 19.3775 12.6306C19.3775 10.9761 18.0411 9.60788 16.3547 9.60788C14.6684 9.60788 13.332 10.9761 13.332 12.6306C13.332 13.7761 13.9365 15.3352 14.8911 16.1942V16.8942L13.0138 17.4988C12.4729 17.6579 12.0911 18.167 12.0911 18.7397V20.3624C12.0911 20.5215 12.2184 20.6806 12.4093 20.6806H20.3638C20.5229 20.6806 20.682 20.5533 20.682 20.3624V18.7397C20.682 18.167 20.3002 17.6579 19.7593 17.4988ZM17.2138 17.117C17.2138 17.6261 15.5593 17.6261 15.5593 17.117V16.6079C16.132 16.8942 16.6729 16.8624 17.2138 16.6079V17.117ZM14.5093 14.5079C14.7956 14.1261 14.9865 13.3942 15.0184 12.6624C15.4956 12.9488 16.0365 13.0761 16.6093 13.0761C17.1184 13.0442 17.5638 12.917 17.9456 12.6624C18.0093 13.1079 18.1365 13.6806 18.4547 13.967C18.4865 13.9988 18.5184 13.9988 18.5502 14.0306C17.5638 16.5124 15.7502 17.0852 14.5093 14.5079ZM7.98654 8.17607L6.04563 7.57152V6.87152C7.00018 6.01243 7.60472 4.45334 7.60472 3.30788C7.60472 1.65334 6.26836 0.285156 4.582 0.285156C2.95927 0.316974 1.59109 1.68516 1.59109 3.3397C1.59109 4.48516 2.19563 6.04425 3.15018 6.90334V7.60334L1.20927 8.20788C0.700178 8.33516 0.318359 8.84425 0.318359 9.41697V11.0715C0.318359 11.2306 0.445632 11.3897 0.636541 11.3897H8.59109C8.75018 11.3897 8.90927 11.2624 8.90927 11.0715V9.41697C8.87745 8.84425 8.52745 8.33516 7.98654 8.17607ZM5.44109 7.79425C5.44109 8.30334 3.78654 8.30334 3.78654 7.79425V7.28516C4.32745 7.5397 4.86836 7.57152 5.44109 7.28516V7.79425ZM2.70472 5.18516C2.99109 4.80334 3.182 4.07152 3.21381 3.3397C3.69109 3.62607 4.232 3.75334 4.80472 3.75334C5.31381 3.72152 5.75927 3.59425 6.14109 3.3397C6.20472 3.78516 6.332 4.35788 6.65018 4.64425C6.682 4.67607 6.71381 4.67607 6.74563 4.70788C5.75927 7.25334 3.94563 7.76243 2.70472 5.18516ZM8.432 15.7488L7.5729 15.4942C7.50927 15.3352 7.47745 15.2079 7.382 15.0488L7.82745 14.2533C7.89109 14.1261 7.85927 13.967 7.76381 13.8715L7.09563 13.2033C7.00018 13.1079 6.84109 13.0761 6.71381 13.1397L5.91836 13.5852C5.79109 13.5215 5.632 13.4579 5.47291 13.3942L5.21836 12.5352C5.18654 12.4079 5.05927 12.3124 4.932 12.3124H3.97745C3.85018 12.3124 3.7229 12.4079 3.69109 12.5352L3.43654 13.3942C3.27745 13.4579 3.15018 13.4897 2.99109 13.5852L2.19563 13.1397C2.06836 13.0761 1.90927 13.1079 1.81381 13.2033L1.14563 13.8715C1.05018 13.967 1.01836 14.1261 1.082 14.2533L1.59109 15.0488C1.52745 15.1761 1.46381 15.3352 1.40018 15.4942L0.541087 15.7488C0.413814 15.7806 0.318359 15.9079 0.318359 16.0352V16.9897C0.318359 17.117 0.413814 17.2442 0.541087 17.2761L1.40018 17.5306C1.46381 17.6897 1.52745 17.817 1.59109 17.9761L1.14563 18.7715C1.082 18.8988 1.11381 19.0261 1.20927 19.1533L1.87745 19.8215C1.9729 19.917 2.132 19.9488 2.25927 19.8852L3.0229 19.4079C3.15018 19.4715 3.30927 19.5352 3.46836 19.5988L3.7229 20.4579C3.75472 20.5852 3.882 20.6806 4.00927 20.6806H4.96381C5.09109 20.6806 5.21836 20.5852 5.25018 20.4579L5.50472 19.5988C5.66381 19.5352 5.79109 19.5033 5.95018 19.4079L6.74563 19.8533C6.8729 19.917 7.00018 19.8852 7.12745 19.7897L7.79563 19.1215C7.89109 19.0261 7.9229 18.867 7.85927 18.7397L7.41381 17.9442C7.47745 17.817 7.54109 17.6579 7.60472 17.5306L8.46381 17.2761C8.59109 17.2442 8.68654 17.117 8.68654 16.9897V16.0352C8.65472 15.9079 8.55927 15.7806 8.432 15.7488ZM4.48654 18.0715C3.62745 18.0715 2.92745 17.3715 2.92745 16.5124C2.92745 15.6533 3.62745 14.9533 4.48654 14.9533C5.34563 14.9533 6.04563 15.6533 6.04563 16.5124C6.04563 17.3715 5.34563 18.0715 4.48654 18.0715ZM20.4593 3.72152L19.6002 3.46697C19.5365 3.30788 19.5047 3.18061 19.4093 3.05334L19.8547 2.25788C19.9184 2.13061 19.8865 1.97152 19.7911 1.87607L19.1229 1.20788C19.0274 1.11243 18.8684 1.08061 18.7411 1.14425L17.9774 1.5897C17.8502 1.52607 17.6911 1.46243 17.532 1.39879L17.2775 0.539702C17.2456 0.412429 17.1184 0.316974 16.9911 0.316974H16.0365C15.9093 0.316974 15.782 0.412429 15.7502 0.539702L15.4956 1.39879C15.3365 1.46243 15.2093 1.49425 15.082 1.5897L14.2865 1.14425C14.1593 1.08061 14.032 1.11243 13.9047 1.20788L13.2365 1.87607C13.1411 1.97152 13.1093 2.13061 13.1729 2.25788L13.6184 3.05334C13.5547 3.18061 13.4911 3.3397 13.4275 3.46697L12.5684 3.72152C12.4411 3.75334 12.3456 3.88061 12.3456 4.00788V4.96243C12.3456 5.0897 12.4411 5.21697 12.5684 5.24879L13.4275 5.50334C13.4911 5.66243 13.5229 5.7897 13.6184 5.91697L13.1729 6.71243C13.1093 6.8397 13.1411 6.99879 13.2365 7.09425L13.9047 7.76243C14.0002 7.85788 14.1593 7.8897 14.2865 7.82607L15.082 7.38061C15.2093 7.44425 15.3684 7.50788 15.4956 7.57152L15.7502 8.43061C15.782 8.55788 15.9093 8.65334 16.0365 8.65334H16.9911C17.1184 8.65334 17.2456 8.55788 17.2775 8.43061L17.532 7.57152C17.6911 7.50788 17.8184 7.47607 17.9774 7.38061L18.7729 7.82607C18.9002 7.8897 19.0593 7.85788 19.1547 7.76243L19.8229 7.09425C19.9184 6.99879 19.9502 6.8397 19.8865 6.71243L19.4093 5.94879C19.4729 5.82152 19.5365 5.66243 19.6002 5.53516L20.4593 5.28061C20.5865 5.24879 20.682 5.12152 20.682 4.99425V4.0397C20.682 3.88061 20.5865 3.75334 20.4593 3.72152ZM16.5138 6.04425C15.6547 6.04425 14.9547 5.34425 14.9547 4.48516C14.9547 3.62607 15.6547 2.92607 16.5138 2.92607C17.3729 2.92607 18.0729 3.62607 18.0729 4.48516C18.0729 5.34425 17.3729 6.04425 16.5138 6.04425Z" fill="white"/>
+                                    <path d="M11.55 18.3275C11.5182 18.4548 11.5182 18.6139 11.5182 18.7411V18.9957C10.7546 18.6457 10.2137 17.882 10.2137 16.9593V11.8684C10.2137 11.3275 9.92731 10.8502 9.51367 10.532V9.83203C10.2773 10.182 10.8182 10.9457 10.8182 11.8684V16.9593C10.8182 17.532 11.1046 18.0411 11.55 18.3275Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_18125">
+                                    <rect width="21" height="21" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="tech-support-list__text">Консультации инженерно-технического персонала 
+                                по общим вопросам</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <!-- Хотите попробовать? -->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-item">
+                        <div class="contact-item-img">
+                            <img src="./assets/imgs/png/form.png" alt="" class="d-none d-md-block">
+                        </div>
+                        <form class="form">
+                            <p class="title__text">Хотите попробовать?</p>
+                            <img src="assets/imgs/png/form-mob.png" alt="" class="form__img d-md-none">
+                            <p class="form__text">Оставьте заявку, и мы проведем комплексный аудит Вашей компании
+                                в первоочередном порядке и со скидкой, на наличие критических ошибок
+                                при изготовлении бетона</p>
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <input type="hidden" name="Форма" value="Хотите попробовать?">
+                                <input type="text" class="form__inp" name="Сайт" placeholder="Ваш сайт" required>
+                                <input type="email" class="form__inp" name="Email" placeholder="E-mail для отчета" required>
+                                <input type="text" class="form__inp" name="Телефон" placeholder="+ 7" required>
+                                <input type="text" class="form__inp" name="Комментарий" placeholder="Комментарий (необязательно)">
+                            </div>
+                            <div class="d-flex justify-content-between mt-3 flex-column-reverse flex-lg-row">
+                                <div class="form__sub">Нажимая на кнопку, Я принимаю <a href="#">соглашение</a>
+                                    <a href="#">о конфиденциальности</a> и соглашаюсь с обработкой
+                                    персональных данных</div>
+                                <button type="submit" class="form__btn">Получить скидку</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Подваль -->
+    <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between flex-wrap flex-column-reverse flex-sm-row">
+                        <div class="d-sm-flex d-none flex-column justify-content-between mt-4">
+                            <a href="./index.html" class="footer__logo">p-tsm.ru</a>
+                            <span class="footer__logo-sub mt-3 mt-sm-0">© 2018-2022 Elirk. <br>
+                                Отраслевая коммерческая <br>
+                                экспертиза бетона</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between mt-4 d-sm-none">
+                            <a href="./index.html" class="footer__logo-mob">Elirk.ru</a>
+                            <span class="footer__logo-mob-sub mt-3 mt-sm-0">© 2020-2022 Elirk. Отраслевая коммерческая <br>
+                                экспертиза бренда</span>
+                        </div>
+                        <div class="d-flex">
+                            <ul class="footer-item mt-4">
+                                <li class="footer-list"><a href="./specialists.html">О нас</a></li>
+                                <li class="footer-list"><a href="./index.html">Технологический аудит и контроль</a></li>
+                                <li class="footer-list"><a href="./audit.html">Решение проблем</a></li>
+                                <li class="footer-list"><a href="./special.html">Акции</a></li>
+                                <!-- <li class="footer-list"><a href="#">Выполненные работы</a></li> -->
+                            </ul>
+                            <ul class="footer-item mt-4">
+                                <li class="footer-list"><a href="./reviews.html">Отзывы</a></li>
+                                <!-- <li class="footer-list"><a href="#">Блог</a></li> -->
+                                <li class="footer-list"><a href="./contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-add d-flex align-items-center align-items-sm-start justify-content-center justify-content-sm-start flex-column mt-4">
+                            <p class="text-center">
+                                <svg class="me-2" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.82925 0.0030542C2.44512 0.0867079 0.464493 1.94677 0.235675 4.32106C0.188928 4.79592 0.215992 5.25601 0.299646 5.69642C0.299646 5.69642 0.307027 5.74809 0.331631 5.84651C0.405443 6.1762 0.516162 6.49605 0.653944 6.79622C1.13372 7.93293 2.24337 9.83482 4.73329 11.904C4.88584 12.032 5.10974 12.032 5.26474 11.904C7.75467 9.83728 8.86431 7.93539 9.34655 6.79376C9.48679 6.49359 9.59505 6.1762 9.66886 5.84405C9.69101 5.74809 9.70085 5.69396 9.70085 5.69396C9.75744 5.39872 9.78696 5.09609 9.78696 4.78608C9.78696 2.08455 7.55046 -0.0929015 4.82925 0.0030542ZM4.99902 7.16774C3.71469 7.16774 2.67394 6.12699 2.67394 4.84266C2.67394 3.55833 3.71469 2.51758 4.99902 2.51758C6.28335 2.51758 7.3241 3.55833 7.3241 4.84266C7.3241 6.12699 6.28335 7.16774 4.99902 7.16774Z" fill="#FFA24B"/>
+                            </svg>
+                            Иркутск,
+                        </p>
+                             <br> ул. Лермонтова, д. 208, офис 105
+                        </div>
+                        <p class="footer-tel text-end d-flex flex-column align-items-center align-items-sm-end">8 (3952) 62-52-92
+                            <span class="footer-tel__sub modal-call__btn">Заказать звонок</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+        <!-- modal -->
+        <div class="pop-up pop-up-reg d-none">
+            <div class="pop-up-item d-flex align-items-center position-relative">
+                <button class="close-pop-up">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.36719 3.36719L19.6325 19.6325" stroke="#525D7D" stroke-width="2.1875" stroke-miterlimit="10"/>
+                        <path d="M3.36719 19.6325L19.6325 3.36719" stroke="#525D7D" stroke-width="2.1875" stroke-miterlimit="10"/>
+                    </svg>
+                </button>
+                <div class="pop-up-item-img d-none d-lg-flex">
+                    <img src="./assets/imgs/png/modal.png" alt="" class="d-none d-md-block">
+                </div>
+                <form class="form">
+                    <p class="title__text mb-4">Получить бесплатную консультацию</p>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <input type="hidden" name="Форма" value="Получить бесплатную консультацию">
+                        <input type="text" class="form__inp" name="Сайт" placeholder="Ваш сайт" required>
+                        <input type="email" class="form__inp" name="Email" placeholder="E-mail для отчета" required>
+                        <input type="text" class="form__inp" name="Телефон" placeholder="+ 7" required>
+                        <button type="submit" class="form__btn">Получить скидку</button>
+                    </div>
+                    <p class="form__sub mt-3">Нажимая на кнопку, Я принимаю <a href="#">соглашение о конфиденциальности</a> и соглашаюсь
+                        с обработкой персональных данных</p>
+                </form>
+            </div>
+        </div>
+
+                <!-- modal -->
+                <div class="pop-up pop-up-call d-none">
+                    <div class="pop-up-item d-flex align-items-center position-relative">
+                        <button class="close-pop-up">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.36719 3.36719L19.6325 19.6325" stroke="#525D7D" stroke-width="2.1875" stroke-miterlimit="10"/>
+                                <path d="M3.36719 19.6325L19.6325 3.36719" stroke="#525D7D" stroke-width="2.1875" stroke-miterlimit="10"/>
+                            </svg>
+                        </button>
+                        <div class="pop-up-item-img d-none d-lg-flex">
+                            <img src="./assets/imgs/png/modal.png" alt="" class="d-none d-md-block">
+                        </div>
+                        <form class="form">
+                            <p class="title__text mb-4">Заказать звонок</p>
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <input type="hidden" name="Форма" value="Заказать звонок">
+                                <input type="text" class="form__inp" name="Имя" placeholder="Ваше имя" required>
+                                <input type="email" class="form__inp" name="Email" placeholder="E-mail" required>
+                                <input type="text" class="form__inp" name="Телефон" placeholder="+ 7" required>
+                                <button type="submit" class="form__btn">Отправить</button>
+                            </div>
+                            <p class="form__sub mt-3">Нажимая на кнопку, Я принимаю <a href="#">соглашение о конфиденциальности</a> и соглашаюсь 
+                                с обработкой персональных данных</p>
+                        </form>
+                    </div>
+                </div>
+
+    <div class="pop-up pop-up-mess-ok d-none">
+        <div class="pop-up-item d-flex align-items-center position-relative">
+            <p class="title__text-ok">Сообщение отправлено!</p>
+        </div>
+    </div>
+    <div class="pop-up pop-up-mess-err d-none">
+        <div class="pop-up-item d-flex align-items-center position-relative">
+            <p class="title__text-ok">Произошла ошибка:(<br>Попробуйте позже.</p>
+        </div>
+    </div>
+
+    <script src="./assets/js/plugins/jquery.js"></script>
+    <script src="./assets/js/plugins/wow.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/audit.js"></script>
+    <script src="./assets/js/email.js"></script>
+</body>
+</html>
